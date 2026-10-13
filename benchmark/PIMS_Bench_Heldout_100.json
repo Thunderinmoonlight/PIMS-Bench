@@ -1,0 +1,1957 @@
+{
+  "WS": {
+    "tasks": {
+      "WS-L1-01": {
+        "task_id": "WS-L1-01",
+        "case_number": 400,
+        "oracle_case": [
+          "CASE 400 | Set the selling price of jet fuel to $150/bbl.",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "JET | JET | 150.0 |",
+          "*"
+        ],
+        "scenario": "Set the selling price of jet fuel to $150/bbl."
+      },
+      "WS-L1-02": {
+        "task_id": "WS-L1-02",
+        "case_number": 401,
+        "oracle_case": [
+          "CASE 401 | Set the minimum purchase quantity of Kuwait crude to 15 kbbl/day.",
+          "TABLE | BUY",
+          " | TEXT | MIN |",
+          "KUW | KUW | 15.0 |",
+          "*"
+        ],
+        "scenario": "Set the minimum purchase quantity of Kuwait crude to 15 kbbl/day."
+      },
+      "WS-L1-03": {
+        "task_id": "WS-L1-03",
+        "case_number": 402,
+        "oracle_case": [
+          "CASE 402 | Set the minimum throughput of the FCC unit to 23 kbbl/day. Set the selling price of regular gasoline to $140/bbl.",
+          "TABLE | CAPS",
+          " | TEXT | MIN |",
+          "CCCU | CCCU | 23.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "URG | URG | 140.0 |",
+          "*"
+        ],
+        "scenario": "Set the minimum throughput of the FCC unit to 23 kbbl/day. Set the selling price of regular gasoline to $140/bbl."
+      },
+      "WS-L1-04": {
+        "task_id": "WS-L1-04",
+        "case_number": 403,
+        "oracle_case": [
+          "CASE 403 | Set the selling price of diesel to $148/bbl.",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "DSL | DSL | 148.0 |",
+          "*"
+        ],
+        "scenario": "Set the selling price of diesel to $148/bbl."
+      },
+      "WS-L1-05": {
+        "task_id": "WS-L1-05",
+        "case_number": 404,
+        "oracle_case": [
+          "CASE 404 | Set the capacity limit of the FCC unit to 30 kbbl/day.",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CCCU | CCCU | 30.0 |",
+          "*"
+        ],
+        "scenario": "Set the capacity limit of the FCC unit to 30 kbbl/day."
+      },
+      "WS-L1-06": {
+        "task_id": "WS-L1-06",
+        "case_number": 405,
+        "oracle_case": [
+          "CASE 405 | Set the minimum throughput of the catalytic reformer to 15 kbbl/day. Set the selling price of premium gasoline to $155/bbl.",
+          "TABLE | CAPS",
+          " | TEXT | MIN |",
+          "CLPR | CLPR | 15.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "UPR | UPR | 155.0 |",
+          "*"
+        ],
+        "scenario": "Set the minimum throughput of the catalytic reformer to 15 kbbl/day. Set the selling price of premium gasoline to $155/bbl."
+      },
+      "WS-L1-07": {
+        "task_id": "WS-L1-07",
+        "case_number": 406,
+        "oracle_case": [
+          "CASE 406 | Set the purchase limit of Bachequero crude to 20 kbbl/day. Set the purchase cost of Bachequero crude to $234/bbl.",
+          "TABLE | BUY",
+          " | TEXT | MAX | COST |",
+          "BAC | BAC | 20.0 | 234.0 |",
+          "*"
+        ],
+        "scenario": "Set the purchase limit of Bachequero crude to 20 kbbl/day. Set the purchase cost of Bachequero crude to $234/bbl."
+      },
+      "WS-L1-08": {
+        "task_id": "WS-L1-08",
+        "case_number": 407,
+        "oracle_case": [
+          "CASE 407 | Set the selling price of premium gasoline to $160/bbl. Set the maximum sales volume of premium gasoline to 5 kbbl/day.",
+          "TABLE | SELL",
+          " | TEXT | MAX | PRICE |",
+          "UPR | UPR | 5.0 | 160.0 |",
+          "*"
+        ],
+        "scenario": "Set the selling price of premium gasoline to $160/bbl. Set the maximum sales volume of premium gasoline to 5 kbbl/day."
+      },
+      "WS-L1-09": {
+        "task_id": "WS-L1-09",
+        "case_number": 408,
+        "oracle_case": [
+          "CASE 408 | Fix the purchase quantity of Bachequero crude at 20 kbbl/day. Set its infeasibility-breaker price to $234/bbl.",
+          "TABLE | BUY",
+          " | TEXT | MIN | MAX | IPRICE |",
+          "BAC | BAC | 20.0 | 20.0 | 234.0 |",
+          "*"
+        ],
+        "scenario": "Fix the purchase quantity of Bachequero crude at 20 kbbl/day. Set its infeasibility-breaker price to $234/bbl."
+      },
+      "WS-L1-10": {
+        "task_id": "WS-L1-10",
+        "case_number": 409,
+        "oracle_case": [
+          "CASE 409 | Set the power utility purchase cost to $0.12/kWh.",
+          "TABLE | UTILBUY",
+          " | TEXT | COST |",
+          "PWR | PWR | 0.12 |",
+          "*"
+        ],
+        "scenario": "Set the power utility purchase cost to $0.12/kWh."
+      },
+      "WS-L2-01": {
+        "task_id": "WS-L2-01",
+        "case_number": 410,
+        "oracle_case": [
+          "CASE 410 | Set the selling price of regular gasoline to $140/bbl. Set the selling price of diesel to $148/bbl. Set the purchase limit of Kuwait crude to 40 kbbl/day.",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "URG | URG | 140.0 |",
+          "DSL | DSL | 148.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "KUW | KUW | 40.0 |",
+          "*"
+        ],
+        "scenario": "Set the selling price of regular gasoline to $140/bbl. Set the selling price of diesel to $148/bbl. Set the purchase limit of Kuwait crude to 40 kbbl/day."
+      },
+      "WS-L2-02": {
+        "task_id": "WS-L2-02",
+        "case_number": 411,
+        "oracle_case": [
+          "CASE 411 | Set the operating range of the delayed coker to 13–20 kbbl/day. Set the purchase limit of Arab Heavy crude to 55 kbbl/day. Set the selling price of diesel to $145/bbl.",
+          "TABLE | CAPS",
+          " | TEXT | MIN | MAX |",
+          "CDLC | CDLC | 13.0 | 20.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "AHV | AHV | 55.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "DSL | DSL | 145.0 |",
+          "*"
+        ],
+        "scenario": "Set the operating range of the delayed coker to 13–20 kbbl/day. Set the purchase limit of Arab Heavy crude to 55 kbbl/day. Set the selling price of diesel to $145/bbl."
+      },
+      "WS-L2-03": {
+        "task_id": "WS-L2-03",
+        "case_number": 412,
+        "oracle_case": [
+          "CASE 412 | Set the natural-gas utility purchase cost to $15/MMBtu and the diesel selling price to $140/bbl.",
+          "TABLE | UTILBUY",
+          " | TEXT | COST |",
+          "GAS | GAS | 15.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "DSL | DSL | 140.0 |",
+          "*"
+        ],
+        "scenario": "Set the natural-gas utility purchase cost to $15/MMBtu and the diesel selling price to $140/bbl."
+      },
+      "WS-L2-04": {
+        "task_id": "WS-L2-04",
+        "case_number": 413,
+        "oracle_case": [
+          "CASE 413 | Set the sulfur specification of diesel to 0.05 wt%. Set the capacity limit of the distillate hydrotreater to 20 kbbl/day. Set the selling price of regular gasoline to $140/bbl.",
+          "TABLE | BLNSPEC",
+          " | TEXT | DSL |",
+          "XSUL | XSUL | 0.05 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CDHT | CDHT | 20.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "URG | URG | 140.0 |",
+          "*"
+        ],
+        "scenario": "Set the sulfur specification of diesel to 0.05 wt%. Set the capacity limit of the distillate hydrotreater to 20 kbbl/day. Set the selling price of regular gasoline to $140/bbl."
+      },
+      "WS-L2-05": {
+        "task_id": "WS-L2-05",
+        "case_number": 414,
+        "oracle_case": [
+          "CASE 414 | Set the capacity limit of the CDU-2 to 40 kbbl/day. Set the capacity limit of the distillate hydrotreater to 10 kbbl/day. Set the capacity limit of the FCC unit to 20 kbbl/day. Set the capacity limit of the delayed coker to 12 kbbl/day. Set the capacity limit of the catalytic reformer to 20 kbbl/day.",
+          "REPLACE | CAPS",
+          " | TEXT | MAX |",
+          "Cat2 | Cat2 | 40.0 |",
+          "CDHT | CDHT | 10.0 |",
+          "CCCU | CCCU | 20.0 |",
+          "CDLC | CDLC | 12.0 |",
+          "CLPR | CLPR | 20.0 |",
+          "*"
+        ],
+        "scenario": "Set the capacity limit of the CDU-2 to 40 kbbl/day. Set the capacity limit of the distillate hydrotreater to 10 kbbl/day. Set the capacity limit of the FCC unit to 20 kbbl/day. Set the capacity limit of the delayed coker to 12 kbbl/day. Set the capacity limit of the catalytic reformer to 20 kbbl/day."
+      },
+      "WS-L2-06": {
+        "task_id": "WS-L2-06",
+        "case_number": 415,
+        "oracle_case": [
+          "CASE 415 | Set the RVP index of regular gasoline to 13. Set the selling price of premium gasoline to $158/bbl.",
+          "TABLE | BLNSPEC",
+          " | TEXT | URG |",
+          "XRVI | XRVI | 13.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "UPR | UPR | 158.0 |",
+          "*"
+        ],
+        "scenario": "Set the RVP index of regular gasoline to 13. Set the selling price of premium gasoline to $158/bbl."
+      },
+      "WS-L2-07": {
+        "task_id": "WS-L2-07",
+        "case_number": 416,
+        "oracle_case": [
+          "CASE 416 | Set the operating range of the delayed coker to 5–8 kbbl/day. Set the selling price of diesel to $148/bbl.",
+          "TABLE | CAPS",
+          " | TEXT | MIN | MAX |",
+          "CDLC | CDLC | 5.0 | 8.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "DSL | DSL | 148.0 |",
+          "*"
+        ],
+        "scenario": "Set the operating range of the delayed coker to 5–8 kbbl/day. Set the selling price of diesel to $148/bbl."
+      },
+      "WS-L2-08": {
+        "task_id": "WS-L2-08",
+        "case_number": 417,
+        "oracle_case": [
+          "CASE 417 | Activate RVP tracking by setting the RVP index to 1, and set the regular-gasoline selling price to $140/bbl.",
+          "TABLE | RFG",
+          " | TEXT | INDEX |",
+          "RVP | RVP | 1.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "URG | URG | 140.0 |",
+          "*"
+        ],
+        "scenario": "Activate RVP tracking by setting the RVP index to 1, and set the regular-gasoline selling price to $140/bbl."
+      },
+      "WS-L2-09": {
+        "task_id": "WS-L2-09",
+        "case_number": 418,
+        "oracle_case": [
+          "CASE 418 | Set the fuel-gas utility purchase cost to $12/MMBtu and the high-sulfur fuel-oil selling price to $125/bbl.",
+          "TABLE | UTILBUY",
+          " | TEXT | COST |",
+          "FUEL GAS | FUEL GAS | 12.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "HSF | HSF | 125.0 |",
+          "*"
+        ],
+        "scenario": "Set the fuel-gas utility purchase cost to $12/MMBtu and the high-sulfur fuel-oil selling price to $125/bbl."
+      },
+      "WS-L2-10": {
+        "task_id": "WS-L2-10",
+        "case_number": 419,
+        "oracle_case": [
+          "CASE 419 | Create or update product group DIST with group number 9. Assign diesel to product group DIST. Set the selling price of diesel to $145/bbl.",
+          "TABLE | GROUPS",
+          " | TEXT | GROUP | DSL |",
+          "DIST | DIST | 9.0 | 1.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "DSL | DSL | 145.0 |",
+          "*"
+        ],
+        "scenario": "Create or update product group DIST with group number 9. Assign diesel to product group DIST. Set the selling price of diesel to $145/bbl."
+      },
+      "WS-L3-01": {
+        "task_id": "WS-L3-01",
+        "case_number": 420,
+        "oracle_case": [
+          "CASE 420 | Update the DHT submodel coefficients: WBALHTD.BAS=-0.99, WBALLOS.BAS=0.008473. Set the minimum throughput of the distillate hydrotreater to 8 kbbl/day. Set the selling price of diesel to $145/bbl.",
+          "TABLE | SDHT",
+          " | TEXT | BAS |",
+          "WBALHTD | WBALHTD | -0.99 |",
+          "WBALLOS | WBALLOS | 0.008473 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MIN |",
+          "CDHT | CDHT | 8.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "DSL | DSL | 145.0 |",
+          "*"
+        ],
+        "scenario": "Update the DHT submodel coefficients: WBALHTD.BAS=-0.99, WBALLOS.BAS=0.008473. Set the minimum throughput of the distillate hydrotreater to 8 kbbl/day. Set the selling price of diesel to $145/bbl."
+      },
+      "WS-L3-02": {
+        "task_id": "WS-L3-02",
+        "case_number": 421,
+        "oracle_case": [
+          "CASE 421 | Enable isobutane as a blending component for diesel. Enable isobutane as a blending component for low-sulfur fuel oil. Set the overall upper blending limit of isobutane to 0.05. Set the purchase limit of isobutane to 15 kbbl/day. Set the purchase cost of isobutane to $120/bbl. Set the selling price of regular gasoline to $142/bbl.",
+          "TABLE | BLNMIX",
+          " | TEXT | DSL | LSF |",
+          "IC4 | IC4 | 1.0 | 1.0 |",
+          "*",
+          "TABLE | BLNTARG",
+          " | TEXT | UALL |",
+          "IC4 | IC4 | 0.05 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX | COST |",
+          "IC4 | IC4 | 15.0 | 120.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "URG | URG | 142.0 |",
+          "*"
+        ],
+        "scenario": "Enable isobutane as a blending component for diesel. Enable isobutane as a blending component for low-sulfur fuel oil. Set the overall upper blending limit of isobutane to 0.05. Set the purchase limit of isobutane to 15 kbbl/day. Set the purchase cost of isobutane to $120/bbl. Set the selling price of regular gasoline to $142/bbl."
+      },
+      "WS-L3-03": {
+        "task_id": "WS-L3-03",
+        "case_number": 422,
+        "oracle_case": [
+          "CASE 422 | Set the overall upper blending limit of isobutane to 0.05. Enable isobutane as a blending component for diesel. Enable isobutane as a blending component for low-sulfur fuel oil. Set the purchase limit of isobutane to 15 kbbl/day. Set the purchase cost of isobutane to $120/bbl. Set the selling price of regular gasoline to $142/bbl.",
+          "TABLE | BLNTARG",
+          " | TEXT | UALL |",
+          "IC4 | IC4 | 0.05 |",
+          "*",
+          "TABLE | BLNMIX",
+          " | TEXT | DSL | LSF |",
+          "IC4 | IC4 | 1.0 | 1.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX | COST |",
+          "IC4 | IC4 | 15.0 | 120.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "URG | URG | 142.0 |",
+          "*"
+        ],
+        "scenario": "Set the overall upper blending limit of isobutane to 0.05. Enable isobutane as a blending component for diesel. Enable isobutane as a blending component for low-sulfur fuel oil. Set the purchase limit of isobutane to 15 kbbl/day. Set the purchase cost of isobutane to $120/bbl. Set the selling price of regular gasoline to $142/bbl."
+      },
+      "WS-L3-04": {
+        "task_id": "WS-L3-04",
+        "case_number": 423,
+        "oracle_case": [
+          "CASE 423 | Set TEL additive use for regular gasoline to 0.5. Set the capacity limit of the catalytic reformer to 26 kbbl/day. Set the purchase limit of isobutane to 12 kbbl/day. Set the purchase cost of isobutane to $115/bbl. Set the selling price of regular gasoline to $140/bbl.",
+          "TABLE | ADDITIVE",
+          " | TEXT | URG |",
+          "TEL | TEL | 0.5 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CLPR | CLPR | 26.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX | COST |",
+          "IC4 | IC4 | 12.0 | 115.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "URG | URG | 140.0 |",
+          "*"
+        ],
+        "scenario": "Set TEL additive use for regular gasoline to 0.5. Set the capacity limit of the catalytic reformer to 26 kbbl/day. Set the purchase limit of isobutane to 12 kbbl/day. Set the purchase cost of isobutane to $115/bbl. Set the selling price of regular gasoline to $140/bbl."
+      },
+      "WS-L3-05": {
+        "task_id": "WS-L3-05",
+        "case_number": 424,
+        "oracle_case": [
+          "CASE 424 | Set blend-capacity row GB1 MAX to 50 kbbl/day. Set the capacity limit of the distillate hydrotreater to 20 kbbl/day. Set the selling price of regular gasoline to $140/bbl.",
+          "TABLE | BLNCAP",
+          " | TEXT | MAX |",
+          "GB1 | GB1 | 50.0 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CDHT | CDHT | 20.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "URG | URG | 140.0 |",
+          "*"
+        ],
+        "scenario": "Set blend-capacity row GB1 MAX to 50 kbbl/day. Set the capacity limit of the distillate hydrotreater to 20 kbbl/day. Set the selling price of regular gasoline to $140/bbl."
+      },
+      "WS-L3-06": {
+        "task_id": "WS-L3-06",
+        "case_number": 425,
+        "oracle_case": [
+          "CASE 425 | Update the FCC submodel coefficients to WBALLC1.975=-0.3 and WBALCCD.975=-0.1. Raise the FCC capacity limit to 28 kbbl/day, add the HNPH row to the premium-gasoline blending specification, and set regular- and premium-gasoline selling prices to $142/bbl and $155/bbl, respectively.",
+          "TABLE | SCCU",
+          " | TEXT | 975 |",
+          "WBALLC1 | WBALLC1 | -0.3 |",
+          "WBALCCD | WBALCCD | -0.1 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CCCU | CCCU | 28.0 |",
+          "*",
+          "TABLE | BLNSPEC",
+          " | TEXT | UPR |",
+          "HNPH | HNPH |  |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "URG | URG | 142.0 |",
+          "UPR | UPR | 155.0 |",
+          "*"
+        ],
+        "scenario": "Update the FCC submodel coefficients to WBALLC1.975=-0.3 and WBALCCD.975=-0.1. Raise the FCC capacity limit to 28 kbbl/day, add the HNPH row to the premium-gasoline blending specification, and set regular- and premium-gasoline selling prices to $142/bbl and $155/bbl, respectively."
+      },
+      "WS-L3-07": {
+        "task_id": "WS-L3-07",
+        "case_number": 426,
+        "oracle_case": [
+          "CASE 426 | Enable alkylate as a blending component for regular gasoline. Enable alkylate as a blending component for premium gasoline. Set the purchase limit of Arab Heavy crude to 55 kbbl/day. Set the selling price of regular gasoline to $140/bbl.",
+          "TABLE | BLNMIX",
+          " | TEXT | URG | UPR |",
+          "ALK | ALK | 1.0 | 1.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "AHV | AHV | 55.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "URG | URG | 140.0 |",
+          "*"
+        ],
+        "scenario": "Enable alkylate as a blending component for regular gasoline. Enable alkylate as a blending component for premium gasoline. Set the purchase limit of Arab Heavy crude to 55 kbbl/day. Set the selling price of regular gasoline to $140/bbl."
+      },
+      "WS-L3-08": {
+        "task_id": "WS-L3-08",
+        "case_number": 427,
+        "oracle_case": [
+          "CASE 427 | Disable isobutane as a blending component for diesel. Disable isobutane as a blending component for low-sulfur fuel oil. Set the purchase limit of isobutane to 8 kbbl/day.",
+          "TABLE | BLNMIX",
+          " | TEXT | DSL | LSF |",
+          "IC4 | Iso-Butane | 0.0 | 0.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "IC4 | Iso-Butane | 8.0 |",
+          "*"
+        ],
+        "scenario": "Disable isobutane as a blending component for diesel. Disable isobutane as a blending component for low-sulfur fuel oil. Set the purchase limit of isobutane to 8 kbbl/day."
+      },
+      "WS-L3-09": {
+        "task_id": "WS-L3-09",
+        "case_number": 428,
+        "oracle_case": [
+          "CASE 428 | Set the purchase limit of n-butane to 10 kbbl/day. Set the capacity limit of the C4 isomerization unit to 8 kbbl/day. Set the capacity limit of the alkylation unit to 15 kbbl/day.",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "NC4 | NButane Purchase | 10.0 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CIS4 | C4 Isom BPD | 8.0 |",
+          "CSFA | Sulf Acid Alky BPD | 15.0 |",
+          "*"
+        ],
+        "scenario": "Set the purchase limit of n-butane to 10 kbbl/day. Set the capacity limit of the C4 isomerization unit to 8 kbbl/day. Set the capacity limit of the alkylation unit to 15 kbbl/day."
+      },
+      "WS-L3-10": {
+        "task_id": "WS-L3-10",
+        "case_number": 429,
+        "oracle_case": [
+          "CASE 429 | Enable light naphtha as a blending component for regular gasoline. Enable light naphtha as a blending component for premium gasoline. Set the capacity limit of the catalytic reformer to 28 kbbl/day. Set the selling price of regular gasoline to $138/bbl.",
+          "TABLE | BLNMIX",
+          " | TEXT | URG | UPR |",
+          "LN1 | LN1 | 1.0 | 1.0 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CLPR | CLPR | 28.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "URG | URG | 138.0 |",
+          "*"
+        ],
+        "scenario": "Enable light naphtha as a blending component for regular gasoline. Enable light naphtha as a blending component for premium gasoline. Set the capacity limit of the catalytic reformer to 28 kbbl/day. Set the selling price of regular gasoline to $138/bbl."
+      },
+      "WS-L4-01": {
+        "task_id": "WS-L4-01",
+        "case_number": 430,
+        "oracle_case": [
+          "CASE 430 | Set crude cut-point KD1.CD1 to 7. Set the capacity limit of the delayed coker to 20 kbbl/day. Set the selling price of diesel to $148/bbl.",
+          "TABLE | CRDCUTS",
+          " | TEXT | CD1 |",
+          "KD1 | KD1 | 7.0 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CDLC | CDLC | 20.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "DSL | DSL | 148.0 |",
+          "*"
+        ],
+        "scenario": "Set crude cut-point KD1.CD1 to 7. Set the capacity limit of the delayed coker to 20 kbbl/day. Set the selling price of diesel to $148/bbl."
+      },
+      "WS-L4-02": {
+        "task_id": "WS-L4-02",
+        "case_number": 431,
+        "oracle_case": [
+          "CASE 431 | Set the minimum throughput of the FCC unit to 23 kbbl/day. Set the minimum throughput of the delayed coker to 13 kbbl/day. Set the selling price of regular gasoline to $140/bbl.",
+          "TABLE | CAPS",
+          " | TEXT | MIN |",
+          "CCCU | Cat Cracker BPD | 23.0 |",
+          "CDLC | Delayed Coker BPD | 13.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "URG | Unleaded Regular | 140.0 |",
+          "*"
+        ],
+        "scenario": "Set the minimum throughput of the FCC unit to 23 kbbl/day. Set the minimum throughput of the delayed coker to 13 kbbl/day. Set the selling price of regular gasoline to $140/bbl."
+      },
+      "WS-L4-03": {
+        "task_id": "WS-L4-03",
+        "case_number": 432,
+        "oracle_case": [
+          "CASE 432 | Set crude cut-point AK1.CD1 to 3. Set the maximum FCC conversion to 75%. Set the capacity limit of the FCC unit to 75 kbbl/day. Set the selling price of diesel to $145/bbl.",
+          "TABLE | CRDCUTS",
+          " | TEXT | CD1 |",
+          "AK1 | AK1 | 3.0 |",
+          "*",
+          "TABLE | PROCLIM",
+          " | TEXT | MAX |",
+          "ZCON | ZCON | 75.0 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CCCU | CCCU | 75.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "DSL | DSL | 145.0 |",
+          "*"
+        ],
+        "scenario": "Set crude cut-point AK1.CD1 to 3. Set the maximum FCC conversion to 75%. Set the capacity limit of the FCC unit to 75 kbbl/day. Set the selling price of diesel to $145/bbl."
+      },
+      "WS-L4-04": {
+        "task_id": "WS-L4-04",
+        "case_number": 433,
+        "oracle_case": [
+          "CASE 433 | Update the reformer submodel coefficients: WBALR90.WBALR90=-0.9117, WBALR94.WBALR94=-0.8939, WBALR98.WBALR98=-0.8717. Set the capacity limit of the catalytic reformer to 30 kbbl/day. Set the capacity limit of the delayed coker to 18 kbbl/day. Set the purchase limit of Arab Light crude to 45 kbbl/day. Set the selling price of premium gasoline to $160/bbl. Set the selling price of jet fuel to $155/bbl.",
+          "TABLE | SLPR",
+          " | TEXT | WBALR90 | WBALR94 | WBALR98 |",
+          "WBALR90 | WBALR90 | -0.9117 |  |  |",
+          "WBALR94 | WBALR94 |  | -0.8939 |  |",
+          "WBALR98 | WBALR98 |  |  | -0.8717 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CLPR | CLPR | 30.0 |",
+          "CDLC | CDLC | 18.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "ARL | ARL | 45.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "UPR | UPR | 160.0 |",
+          "JET | JET | 155.0 |",
+          "*"
+        ],
+        "scenario": "Update the reformer submodel coefficients: WBALR90.WBALR90=-0.9117, WBALR94.WBALR94=-0.8939, WBALR98.WBALR98=-0.8717. Set the capacity limit of the catalytic reformer to 30 kbbl/day. Set the capacity limit of the delayed coker to 18 kbbl/day. Set the purchase limit of Arab Light crude to 45 kbbl/day. Set the selling price of premium gasoline to $160/bbl. Set the selling price of jet fuel to $155/bbl."
+      },
+      "WS-L4-05": {
+        "task_id": "WS-L4-05",
+        "case_number": 434,
+        "oracle_case": [
+          "CASE 434 | Shut down the delayed coker by setting both its minimum and maximum throughput to 0 kbbl/day, and set the high-sulfur fuel-oil sales limit to 10 kbbl/day.",
+          "TABLE | CAPS",
+          " | TEXT | MIN | MAX |",
+          "CDLC | Delayed Coker BPD | 0.0 | 0.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | MAX |",
+          "HSF | High Sulfur Fuel Oil | 10.0 |",
+          "*"
+        ],
+        "scenario": "Shut down the delayed coker by setting both its minimum and maximum throughput to 0 kbbl/day, and set the high-sulfur fuel-oil sales limit to 10 kbbl/day."
+      },
+      "WS-L4-06": {
+        "task_id": "WS-L4-06",
+        "case_number": 435,
+        "oracle_case": [
+          "CASE 435 | Set the operating range of the delayed coker to 0–8 kbbl/day. Set the maximum sales volume of high-sulfur fuel oil to 5 kbbl/day. Set the maximum sales volume of diesel to 18 kbbl/day.",
+          "TABLE | CAPS",
+          " | TEXT | MIN | MAX |",
+          "CDLC | Delayed Coker BPD | 0.0 | 8.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | MAX |",
+          "HSF | High Sulfur Fuel Oil | 5.0 |",
+          "DSL | Diesel | 18.0 |",
+          "*"
+        ],
+        "scenario": "Set the operating range of the delayed coker to 0–8 kbbl/day. Set the maximum sales volume of high-sulfur fuel oil to 5 kbbl/day. Set the maximum sales volume of diesel to 18 kbbl/day."
+      },
+      "WS-L4-07": {
+        "task_id": "WS-L4-07",
+        "case_number": 436,
+        "oracle_case": [
+          "CASE 436 | Enable hydrotreated kerosene as a blending component for diesel. Disable hydrotreated kerosene as a blending component for high-sulfur fuel oil. Set the selling price of diesel to $150/bbl.",
+          "TABLE | BLNMIX",
+          " | TEXT | DSL | HSF |",
+          "HTK | Hydrotreated Kero | 1.0 | 0.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE | MAX |",
+          "DSL | Diesel | 150.0 |  |",
+          "*"
+        ],
+        "scenario": "Enable hydrotreated kerosene as a blending component for diesel. Disable hydrotreated kerosene as a blending component for high-sulfur fuel oil. Set the selling price of diesel to $150/bbl."
+      },
+      "WS-L4-08": {
+        "task_id": "WS-L4-08",
+        "case_number": 437,
+        "oracle_case": [
+          "CASE 437 | Set performance-curve row XCCU to 1=1.5, 2=2.5, 3=3.5. Set performance-curve row YCCU to 1=45, 2=52, 3=56. Set the capacity limit of the delayed coker to 22 kbbl/day. Set the capacity limit of the FCC unit to 30 kbbl/day. Set the capacity limit of the hydrocracker to 22 kbbl/day. Set the purchase limit of Arab Light crude to 45 kbbl/day. Set the purchase limit of Arab Heavy crude to 52 kbbl/day. Set the purchase limit of Kuwait crude to 56 kbbl/day. Set the selling price of regular gasoline to $138/bbl. Set the selling price of diesel to $148/bbl. Set the selling price of jet fuel to $150/bbl.",
+          "TABLE | CURVE",
+          " | TEXT | 1 | 2 | 3 |",
+          "XCCU | XCCU | 1.5 | 2.5 | 3.5 |",
+          "YCCU | YCCU | 45.0 | 52.0 | 56.0 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CDLC | CDLC | 22.0 |",
+          "CCCU | CCCU | 30.0 |",
+          "CHCD | CHCD | 22.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "ARL | ARL | 45.0 |",
+          "ARH | ARH | 52.0 |",
+          "KUW | KUW | 56.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "URG | URG | 138.0 |",
+          "DSL | DSL | 148.0 |",
+          "JET | JET | 150.0 |",
+          "*"
+        ],
+        "scenario": "Set performance-curve row XCCU to 1=1.5, 2=2.5, 3=3.5. Set performance-curve row YCCU to 1=45, 2=52, 3=56. Set the capacity limit of the delayed coker to 22 kbbl/day. Set the capacity limit of the FCC unit to 30 kbbl/day. Set the capacity limit of the hydrocracker to 22 kbbl/day. Set the purchase limit of Arab Light crude to 45 kbbl/day. Set the purchase limit of Arab Heavy crude to 52 kbbl/day. Set the purchase limit of Kuwait crude to 56 kbbl/day. Set the selling price of regular gasoline to $138/bbl. Set the selling price of diesel to $148/bbl. Set the selling price of jet fuel to $150/bbl."
+      },
+      "WS-L4-09": {
+        "task_id": "WS-L4-09",
+        "case_number": 438,
+        "oracle_case": [
+          "CASE 438 | Set crude cut-point AK1.CD1 to 4. Set the capacity limit of the FCC unit to 30 kbbl/day. Set the capacity limit of the catalytic reformer to 28 kbbl/day. Set reformer severity to the range 95–105. Set the purchase limit of Arab Light crude to 45 kbbl/day. Set the selling price of regular gasoline to $142/bbl. Set the selling price of premium gasoline to $155/bbl. Set the selling price of jet fuel to $150/bbl. Set the selling price of diesel to $145/bbl.",
+          "TABLE | CRDCUTS",
+          " | TEXT | CD1 |",
+          "AK1 | AK1 | 4.0 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX | MIN |",
+          "CCCU | CCCU | 30.0 |  |",
+          "CLPR | CLPR | 28.0 |  |",
+          "*",
+          "TABLE | PROCLIM",
+          " | TEXT | MIN | MAX |",
+          "ZSEV | ZSEV | 95.0 | 105.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "ARL | ARL | 45.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "URG | URG | 142.0 |",
+          "UPR | UPR | 155.0 |",
+          "JET | JET | 150.0 |",
+          "DSL | DSL | 145.0 |",
+          "*"
+        ],
+        "scenario": "Set crude cut-point AK1.CD1 to 4. Set the capacity limit of the FCC unit to 30 kbbl/day. Set the capacity limit of the catalytic reformer to 28 kbbl/day. Set reformer severity to the range 95–105. Set the purchase limit of Arab Light crude to 45 kbbl/day. Set the selling price of regular gasoline to $142/bbl. Set the selling price of premium gasoline to $155/bbl. Set the selling price of jet fuel to $150/bbl. Set the selling price of diesel to $145/bbl."
+      },
+      "WS-L4-10": {
+        "task_id": "WS-L4-10",
+        "case_number": 439,
+        "oracle_case": [
+          "CASE 439 | Shut down the kerosene hydrotreater by setting both its minimum and maximum throughput to 0 kbbl/day, and set the minimum jet-fuel sales volume to 5 kbbl/day.",
+          "TABLE | CAPS",
+          " | TEXT | MIN | MAX |",
+          "CKHT | Kero Hydrotrt BPD | 0.0 | 0.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | MIN |",
+          "JET | Kero/Jet | 5.0 |",
+          "*"
+        ],
+        "scenario": "Shut down the kerosene hydrotreater by setting both its minimum and maximum throughput to 0 kbbl/day, and set the minimum jet-fuel sales volume to 5 kbbl/day."
+      },
+      "WS-L5-01": {
+        "task_id": "WS-L5-01",
+        "case_number": 440,
+        "oracle_case": [
+          "CASE 440 | Update the reformer submodel coefficients: WBALR90.R90=-0.93, WBALR94.R94=-0.915, WBALR98.R98=-0.895, WBALLOS.R90=0.0091, WBALLOS.R94=0.0121, WBALLOS.R98=0.0145.",
+          "TABLE | SLPR",
+          " | TEXT | R90 | R94 | R98 |",
+          "WBALR90 | 90 RONC Reformate | -0.930 |  |  |",
+          "WBALR94 | 94 RONC Reformate |  | -0.915 |  |",
+          "WBALR98 | 98 RONC Reformate |  |  | -0.895 |",
+          "WBALLOS | Loss | 0.0091 | 0.0121 | 0.0145 |",
+          "*"
+        ],
+        "scenario": "Update the reformer submodel coefficients: WBALR90.R90=-0.93, WBALR94.R94=-0.915, WBALR98.R98=-0.895, WBALLOS.R90=0.0091, WBALLOS.R94=0.0121, WBALLOS.R98=0.0145."
+      },
+      "WS-L5-02": {
+        "task_id": "WS-L5-02",
+        "case_number": 441,
+        "oracle_case": [
+          "CASE 441 | Update the FCC submodel coefficients: WBALLC1.975=-0.386, WBALCCD.975=-0.154. Enable light catalytic naphtha as a blending component for regular gasoline. Enable light catalytic naphtha as a blending component for diesel. Set the selling price of regular gasoline to $140/bbl. Set the selling price of diesel to $148/bbl.",
+          "TABLE | SCCU",
+          " | TEXT | 975 |",
+          "WBALLC1 | WBALLC1 | -0.386 |",
+          "WBALCCD | WBALCCD | -0.154 |",
+          "*",
+          "TABLE | BLNMIX",
+          " | TEXT | URG | DSL |",
+          "LCN | LCN | 1.0 | 1.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "URG | URG | 140.0 |",
+          "DSL | DSL | 148.0 |",
+          "*"
+        ],
+        "scenario": "Update the FCC submodel coefficients: WBALLC1.975=-0.386, WBALCCD.975=-0.154. Enable light catalytic naphtha as a blending component for regular gasoline. Enable light catalytic naphtha as a blending component for diesel. Set the selling price of regular gasoline to $140/bbl. Set the selling price of diesel to $148/bbl."
+      },
+      "WS-L5-03": {
+        "task_id": "WS-L5-03",
+        "case_number": 442,
+        "oracle_case": [
+          "CASE 442 | Update the DHT submodel coefficients: WBALHTD.BAS=-0.975, WBALHYL.BAS=-0.0065.",
+          "TABLE | SDHT",
+          " | TEXT | BAS |",
+          "WBALHTD | Htd Distillate | -0.975 |",
+          "WBALHYL | Hydrogen | -0.0065 |",
+          "*"
+        ],
+        "scenario": "Update the DHT submodel coefficients: WBALHTD.BAS=-0.975, WBALHYL.BAS=-0.0065."
+      },
+      "WS-L5-04": {
+        "task_id": "WS-L5-04",
+        "case_number": 443,
+        "oracle_case": [
+          "CASE 443 | Set the capacity limit of the hydrocracker to 0 kbbl/day. Set the minimum throughput of the delayed coker to 15 kbbl/day. Set the maximum sales volume of high-sulfur fuel oil to 1.5 kbbl/day. Enable coker gas oil as a blending component for high-sulfur fuel oil. Enable coker distillate as a blending component for high-sulfur fuel oil. Enable catalytic diesel as a blending component for diesel.",
+          "TABLE | CAPS",
+          " | TEXT | MAX | MIN |",
+          "CHCD | CHCD | 0.0 |  |",
+          "CDLC | CDLC |  | 15.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | MAX |",
+          "HSF | HSF | 1.5 |",
+          "*",
+          "TABLE | BLNMIX",
+          " | TEXT | HSF | DSL |",
+          "DCX | DCX | 1.0 |  |",
+          "DCD | DCD | 1.0 |  |",
+          "CCD | CCD |  | 1.0 |",
+          "*"
+        ],
+        "scenario": "Set the capacity limit of the hydrocracker to 0 kbbl/day. Set the minimum throughput of the delayed coker to 15 kbbl/day. Set the maximum sales volume of high-sulfur fuel oil to 1.5 kbbl/day. Enable coker gas oil as a blending component for high-sulfur fuel oil. Enable coker distillate as a blending component for high-sulfur fuel oil. Enable catalytic diesel as a blending component for diesel."
+      },
+      "WS-L5-05": {
+        "task_id": "WS-L5-05",
+        "case_number": 444,
+        "oracle_case": [
+          "CASE 444 | Update the coker submodel coefficients: WBALDCD.BAS=-0.22, WBALCOK.BAS=-0.2676. Update the FCC submodel coefficients: WBALLC1.975=-0.42, WBALCCD.975=-0.154. Set the capacity limit of the delayed coker to 18 kbbl/day. Set the capacity limit of the FCC unit to 28 kbbl/day. Set the selling price of diesel to $145/bbl. Set the selling price of regular gasoline to $140/bbl.",
+          "TABLE | SDLC",
+          " | TEXT | BAS |",
+          "WBALDCD | WBALDCD | -0.22 |",
+          "WBALCOK | WBALCOK | -0.2676 |",
+          "*",
+          "TABLE | SCCU",
+          " | TEXT | 975 |",
+          "WBALLC1 | WBALLC1 | -0.42 |",
+          "WBALCCD | WBALCCD | -0.154 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CDLC | CDLC | 18.0 |",
+          "CCCU | CCCU | 28.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "DSL | DSL | 145.0 |",
+          "URG | URG | 140.0 |",
+          "*"
+        ],
+        "scenario": "Update the coker submodel coefficients: WBALDCD.BAS=-0.22, WBALCOK.BAS=-0.2676. Update the FCC submodel coefficients: WBALLC1.975=-0.42, WBALCCD.975=-0.154. Set the capacity limit of the delayed coker to 18 kbbl/day. Set the capacity limit of the FCC unit to 28 kbbl/day. Set the selling price of diesel to $145/bbl. Set the selling price of regular gasoline to $140/bbl."
+      },
+      "WS-L5-06": {
+        "task_id": "WS-L5-06",
+        "case_number": 445,
+        "oracle_case": [
+          "CASE 445 | Update the hydrocracker submodel coefficients: WBALHCD.BAS=-0.58, WBALHCH.BAS=-0.2614. Update the reformer submodel coefficients: WBALR90.R90=-0.92. Set reformer severity to the range 97–108. Set the capacity limit of the hydrocracker to 18 kbbl/day. Set the capacity limit of the catalytic reformer to 28 kbbl/day. Set the selling price of diesel to $148/bbl. Set the selling price of premium gasoline to $160/bbl.",
+          "TABLE | SHCD",
+          " | TEXT | BAS |",
+          "WBALHCD | WBALHCD | -0.58 |",
+          "WBALHCH | WBALHCH | -0.2614 |",
+          "*",
+          "TABLE | SLPR",
+          " | TEXT | R90 |",
+          "WBALR90 | WBALR90 | -0.92 |",
+          "*",
+          "TABLE | PROCLIM",
+          " | TEXT | MIN | MAX |",
+          "ZSEV | ZSEV | 97.0 | 108.0 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CHCD | CHCD | 18.0 |",
+          "CLPR | CLPR | 28.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "DSL | DSL | 148.0 |",
+          "UPR | UPR | 160.0 |",
+          "*"
+        ],
+        "scenario": "Update the hydrocracker submodel coefficients: WBALHCD.BAS=-0.58, WBALHCH.BAS=-0.2614. Update the reformer submodel coefficients: WBALR90.R90=-0.92. Set reformer severity to the range 97–108. Set the capacity limit of the hydrocracker to 18 kbbl/day. Set the capacity limit of the catalytic reformer to 28 kbbl/day. Set the selling price of diesel to $148/bbl. Set the selling price of premium gasoline to $160/bbl."
+      },
+      "WS-L5-07": {
+        "task_id": "WS-L5-07",
+        "case_number": 446,
+        "oracle_case": [
+          "CASE 446 | Set reformer severity to the range 95–106. Set the maximum FCC conversion to 76%. Set the capacity limit of the CDU-2 to 68 kbbl/day. Set the capacity limit of the FCC unit to 28 kbbl/day. Set the capacity limit of the distillate hydrotreater to 18 kbbl/day. Set the selling price of diesel to $143/bbl. Set the selling price of jet fuel to $152/bbl. Set the selling price of regular gasoline to $139/bbl. Set the selling price of premium gasoline to $157/bbl. Set the purchase cost of Arab Light crude to $102/bbl. Set the purchase cost of Arab Heavy crude to $93/bbl. Set the purchase cost of Kuwait crude to $98/bbl. Set the sulfur specification of diesel to 0.04 wt%.",
+          "TABLE | PROCLIM",
+          " | TEXT | MIN | MAX |",
+          "ZSEV | ZSEV | 95.0 | 106.0 |",
+          "ZCON | ZCON |  | 76.0 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "Cat2 | Cat2 | 68.0 |",
+          "CCCU | CCCU | 28.0 |",
+          "CDHT | CDHT | 18.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "DSL | DSL | 143.0 |",
+          "JET | JET | 152.0 |",
+          "URG | URG | 139.0 |",
+          "UPR | UPR | 157.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | COST |",
+          "ARL | ARL | 102.0 |",
+          "AHV | AHV | 93.0 |",
+          "KUW | KUW | 98.0 |",
+          "*",
+          "TABLE | BLNSPEC",
+          " | TEXT | DSL |",
+          "XSUL | XSUL | 0.04 |",
+          "*"
+        ],
+        "scenario": "Set reformer severity to the range 95–106. Set the maximum FCC conversion to 76%. Set the capacity limit of the CDU-2 to 68 kbbl/day. Set the capacity limit of the FCC unit to 28 kbbl/day. Set the capacity limit of the distillate hydrotreater to 18 kbbl/day. Set the selling price of diesel to $143/bbl. Set the selling price of jet fuel to $152/bbl. Set the selling price of regular gasoline to $139/bbl. Set the selling price of premium gasoline to $157/bbl. Set the purchase cost of Arab Light crude to $102/bbl. Set the purchase cost of Arab Heavy crude to $93/bbl. Set the purchase cost of Kuwait crude to $98/bbl. Set the sulfur specification of diesel to 0.04 wt%."
+      },
+      "WS-L5-08": {
+        "task_id": "WS-L5-08",
+        "case_number": 447,
+        "oracle_case": [
+          "CASE 447 | Set reformer severity to the range 96–106. Set the capacity limit of the CDU-2 to 65 kbbl/day. Set the capacity limit of the FCC unit to 28 kbbl/day. Set the capacity limit of the delayed coker to 18 kbbl/day. Set the capacity limit of the catalytic reformer to 26 kbbl/day. Set the selling price of diesel to $143/bbl. Set the selling price of jet fuel to $152/bbl. Set the selling price of regular gasoline to $139/bbl. Set the selling price of premium gasoline to $157/bbl. Set the purchase limit of Arab Light crude to 45 kbbl/day. Set the purchase limit of Arab Heavy crude to 55 kbbl/day. Set the purchase limit of Kuwait crude to 30 kbbl/day. Set the sulfur specification of diesel to 0.04 wt%.",
+          "TABLE | PROCLIM",
+          " | TEXT | MIN | MAX |",
+          "ZSEV | ZSEV | 96.0 | 106.0 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "Cat2 | Cat2 | 65.0 |",
+          "CCCU | CCCU | 28.0 |",
+          "CDLC | CDLC | 18.0 |",
+          "CLPR | CLPR | 26.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "DSL | DSL | 143.0 |",
+          "JET | JET | 152.0 |",
+          "URG | URG | 139.0 |",
+          "UPR | UPR | 157.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "ARL | ARL | 45.0 |",
+          "AHV | AHV | 55.0 |",
+          "KUW | KUW | 30.0 |",
+          "*",
+          "TABLE | BLNSPEC",
+          " | TEXT | DSL |",
+          "XSUL | XSUL | 0.04 |",
+          "*"
+        ],
+        "scenario": "Set reformer severity to the range 96–106. Set the capacity limit of the CDU-2 to 65 kbbl/day. Set the capacity limit of the FCC unit to 28 kbbl/day. Set the capacity limit of the delayed coker to 18 kbbl/day. Set the capacity limit of the catalytic reformer to 26 kbbl/day. Set the selling price of diesel to $143/bbl. Set the selling price of jet fuel to $152/bbl. Set the selling price of regular gasoline to $139/bbl. Set the selling price of premium gasoline to $157/bbl. Set the purchase limit of Arab Light crude to 45 kbbl/day. Set the purchase limit of Arab Heavy crude to 55 kbbl/day. Set the purchase limit of Kuwait crude to 30 kbbl/day. Set the sulfur specification of diesel to 0.04 wt%."
+      },
+      "WS-L5-09": {
+        "task_id": "WS-L5-09",
+        "case_number": 448,
+        "oracle_case": [
+          "CASE 448 | Shut down both the delayed coker and the distillate hydrotreater by setting each unit's minimum and maximum throughput to 0 kbbl/day. Set the high-sulfur fuel-oil sales limit to 10 kbbl/day.",
+          "TABLE | CAPS",
+          " | TEXT | MIN | MAX |",
+          "CDLC | Delayed Coker BPD | 0.0 | 0.0 |",
+          "CDHT | Dist Hydrotrt BPD | 0.0 | 0.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | MAX |",
+          "HSF | High Sulfur Fuel Oil | 10.0 |",
+          "*"
+        ],
+        "scenario": "Shut down both the delayed coker and the distillate hydrotreater by setting each unit's minimum and maximum throughput to 0 kbbl/day. Set the high-sulfur fuel-oil sales limit to 10 kbbl/day."
+      },
+      "WS-L5-10": {
+        "task_id": "WS-L5-10",
+        "case_number": 449,
+        "oracle_case": [
+          "CASE 449 | Shut down the distillate hydrotreater by setting both its minimum and maximum throughput to 0 kbbl/day.",
+          "TABLE | CAPS",
+          " | TEXT | MIN | MAX |",
+          "CDHT | Dist Hydrotrt BPD | 0.0 | 0.0 |",
+          "*"
+        ],
+        "scenario": "Shut down the distillate hydrotreater by setting both its minimum and maximum throughput to 0 kbbl/day."
+      }
+    }
+  },
+  "GC": {
+    "tasks": {
+      "GC-L1-01": {
+        "task_id": "GC-L1-01",
+        "case_number": 300,
+        "oracle_case": [
+          "CASE 300 | Set the purchase cost of AMM to $64.42/bbl. Set the purchase cost of AMN to $64.08/bbl. Set the purchase cost of AZL to $64.94/bbl. Set the purchase cost of BRL to $64.76/bbl. Set the purchase cost of CAB to $62.35/bbl. Set the purchase cost of EKO to $64.98/bbl. Set the purchase cost of ESC to $65.08/bbl. Set the purchase cost of ESN to $62.82/bbl. Set the purchase cost of ETA to $63.03/bbl. Set the purchase cost of FOR to $65.63/bbl. Set the purchase cost of FRT to $68.52/bbl. Set the purchase cost of NGL to $65.15/bbl. Set the purchase cost of NGM to $63.85/bbl. Set the purchase cost of NMB to $67.12/bbl. Set the purchase cost of PAL to $64.65/bbl. Set the purchase cost of QIB to $64.92/bbl. Set the purchase cost of RAB to $64.03/bbl. Set the purchase cost of RBL to $64.03/bbl. Set the purchase cost of ANS to $60.25/bbl. Set the purchase cost of Arab Heavy crude to $57.28/bbl. Set the purchase cost of Arab Light crude to $60.45/bbl. Set the purchase cost of B17 to $55.4/bbl. Set the purchase cost of BRT to $63.94/bbl. Set the purchase cost of BSL to $60.12/bbl. Set the purchase cost of CEI to $66.27/bbl. Set the purchase cost of DAL to $59.68/bbl. Set the purchase cost of HIB to $64/bbl. Set the purchase cost of KRK to $59.95/bbl. Set the purchase cost of KWT to $57.43/bbl. Set the purchase cost of Mesa crude to $61.06/bbl. Set the purchase cost of MNJ to $60.96/bbl. Set the purchase cost of MRL to $58.18/bbl. Set the purchase cost of Merey crude to $55.38/bbl. Set the purchase cost of MYA to $55.18/bbl. Set the purchase cost of RGN to $61.2/bbl. Set the purchase cost of SBA to $64.63/bbl. Set the purchase cost of SXB to $66.77/bbl. Set the purchase cost of TJL to $64.34/bbl. Set the purchase cost of URL to $62.29/bbl. Set the purchase cost of ZFR to $67.37/bbl.",
+          "TABLE | BUY",
+          " | TEXT | COST |",
+          "AMM | AMM | 64.42 |",
+          "AMN | AMN | 64.08 |",
+          "AZL | AZL | 64.94 |",
+          "BRL | BRL | 64.76 |",
+          "CAB | CAB | 62.35 |",
+          "EKO | EKO | 64.98 |",
+          "ESC | ESC | 65.08 |",
+          "ESN | ESN | 62.82 |",
+          "ETA | ETA | 63.03 |",
+          "FOR | FOR | 65.63 |",
+          "FRT | FRT | 68.52 |",
+          "NGL | NGL | 65.15 |",
+          "NGM | NGM | 63.85 |",
+          "NMB | NMB | 67.12 |",
+          "PAL | PAL | 64.65 |",
+          "QIB | QIB | 64.92 |",
+          "RAB | RAB | 64.03 |",
+          "RBL | RBL | 64.03 |",
+          "ANS | ANS | 60.25 |",
+          "ARH | ARH | 57.28 |",
+          "ARL | ARL | 60.45 |",
+          "B17 | B17 | 55.4 |",
+          "BRT | BRT | 63.94 |",
+          "BSL | BSL | 60.12 |",
+          "CEI | CEI | 66.27 |",
+          "DAL | DAL | 59.68 |",
+          "HIB | HIB | 64.0 |",
+          "KRK | KRK | 59.95 |",
+          "KWT | KWT | 57.43 |",
+          "MES | MES | 61.06 |",
+          "MNJ | MNJ | 60.96 |",
+          "MRL | MRL | 58.18 |",
+          "MRY | MRY | 55.38 |",
+          "MYA | MYA | 55.18 |",
+          "RGN | RGN | 61.2 |",
+          "SBA | SBA | 64.63 |",
+          "SXB | SXB | 66.77 |",
+          "TJL | TJL | 64.34 |",
+          "URL | URL | 62.29 |",
+          "ZFR | ZFR | 67.37 |",
+          "*"
+        ],
+        "scenario": "Set the purchase cost of AMM to $64.42/bbl. Set the purchase cost of AMN to $64.08/bbl. Set the purchase cost of AZL to $64.94/bbl. Set the purchase cost of BRL to $64.76/bbl. Set the purchase cost of CAB to $62.35/bbl. Set the purchase cost of EKO to $64.98/bbl. Set the purchase cost of ESC to $65.08/bbl. Set the purchase cost of ESN to $62.82/bbl. Set the purchase cost of ETA to $63.03/bbl. Set the purchase cost of FOR to $65.63/bbl. Set the purchase cost of FRT to $68.52/bbl. Set the purchase cost of NGL to $65.15/bbl. Set the purchase cost of NGM to $63.85/bbl. Set the purchase cost of NMB to $67.12/bbl. Set the purchase cost of PAL to $64.65/bbl. Set the purchase cost of QIB to $64.92/bbl. Set the purchase cost of RAB to $64.03/bbl. Set the purchase cost of RBL to $64.03/bbl. Set the purchase cost of ANS to $60.25/bbl. Set the purchase cost of Arab Heavy crude to $57.28/bbl. Set the purchase cost of Arab Light crude to $60.45/bbl. Set the purchase cost of B17 to $55.4/bbl. Set the purchase cost of BRT to $63.94/bbl. Set the purchase cost of BSL to $60.12/bbl. Set the purchase cost of CEI to $66.27/bbl. Set the purchase cost of DAL to $59.68/bbl. Set the purchase cost of HIB to $64/bbl. Set the purchase cost of KRK to $59.95/bbl. Set the purchase cost of KWT to $57.43/bbl. Set the purchase cost of Mesa crude to $61.06/bbl. Set the purchase cost of MNJ to $60.96/bbl. Set the purchase cost of MRL to $58.18/bbl. Set the purchase cost of Merey crude to $55.38/bbl. Set the purchase cost of MYA to $55.18/bbl. Set the purchase cost of RGN to $61.2/bbl. Set the purchase cost of SBA to $64.63/bbl. Set the purchase cost of SXB to $66.77/bbl. Set the purchase cost of TJL to $64.34/bbl. Set the purchase cost of URL to $62.29/bbl. Set the purchase cost of ZFR to $67.37/bbl."
+      },
+      "GC-L1-02": {
+        "task_id": "GC-L1-02",
+        "case_number": 301,
+        "oracle_case": [
+          "CASE 301 | Set the selling price of RFG regular gasoline to $109/bbl. Set the selling price of RFG premium gasoline to $114/bbl. Set the selling price of CRG product to $107/bbl. Set the selling price of CPR product to $112/bbl.",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "RRG | RRG | 109.0 |",
+          "RPR | RPR | 114.0 |",
+          "CRG | CRG | 107.0 |",
+          "CPR | CPR | 112.0 |",
+          "*"
+        ],
+        "scenario": "Set the selling price of RFG regular gasoline to $109/bbl. Set the selling price of RFG premium gasoline to $114/bbl. Set the selling price of CRG product to $107/bbl. Set the selling price of CPR product to $112/bbl."
+      },
+      "GC-L1-03": {
+        "task_id": "GC-L1-03",
+        "case_number": 302,
+        "oracle_case": [
+          "CASE 302 | Set the selling price of ultra-low-sulfur diesel to $118/bbl.",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "ULS | ULS | 118.0 |",
+          "*"
+        ],
+        "scenario": "Set the selling price of ultra-low-sulfur diesel to $118/bbl."
+      },
+      "GC-L1-04": {
+        "task_id": "GC-L1-04",
+        "case_number": 303,
+        "oracle_case": [
+          "CASE 303 | Set the purchase limit of Arab Heavy crude to 200 kbbl/day.",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "ARH | ARH | 200.0 |",
+          "*"
+        ],
+        "scenario": "Set the purchase limit of Arab Heavy crude to 200 kbbl/day."
+      },
+      "GC-L1-05": {
+        "task_id": "GC-L1-05",
+        "case_number": 304,
+        "oracle_case": [
+          "CASE 304 | Set the selling price of jet fuel to $105/bbl.",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "JET | JET | 105.0 |",
+          "*"
+        ],
+        "scenario": "Set the selling price of jet fuel to $105/bbl."
+      },
+      "GC-L1-06": {
+        "task_id": "GC-L1-06",
+        "case_number": 305,
+        "oracle_case": [
+          "CASE 305 | Set the RVP index of RFG regular gasoline to 7.5. Set the selling price of RFG regular gasoline to $100/bbl.",
+          "TABLE | BLNSPEC",
+          " | TEXT | RRG |",
+          "XRVI | XRVI | 7.5 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "RRG | RRG | 100.0 |",
+          "*"
+        ],
+        "scenario": "Set the RVP index of RFG regular gasoline to 7.5. Set the selling price of RFG regular gasoline to $100/bbl."
+      },
+      "GC-L1-07": {
+        "task_id": "GC-L1-07",
+        "case_number": 306,
+        "oracle_case": [
+          "CASE 306 | Set the natural-gas utility purchase cost to $13/MMBtu.",
+          "TABLE | UTILBUY",
+          " | TEXT | COST |",
+          "GAS | GAS | 13.0 |",
+          "*"
+        ],
+        "scenario": "Set the natural-gas utility purchase cost to $13/MMBtu."
+      },
+      "GC-L1-08": {
+        "task_id": "GC-L1-08",
+        "case_number": 307,
+        "oracle_case": [
+          "CASE 307 | Set the purchase limit of Arab Light crude to 160 kbbl/day.",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "ARL | ARL | 160.0 |",
+          "*"
+        ],
+        "scenario": "Set the purchase limit of Arab Light crude to 160 kbbl/day."
+      },
+      "GC-L1-09": {
+        "task_id": "GC-L1-09",
+        "case_number": 308,
+        "oracle_case": [
+          "CASE 308 | Set the capacity limit of the CDU-2 to 230 kbbl/day. Set the purchase cost of Arab Heavy crude to $75.28/bbl.",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "Cat2 | Cat2 | 230.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | COST |",
+          "ARH | ARH | 75.28 |",
+          "*"
+        ],
+        "scenario": "Set the capacity limit of the CDU-2 to 230 kbbl/day. Set the purchase cost of Arab Heavy crude to $75.28/bbl."
+      },
+      "GC-L1-10": {
+        "task_id": "GC-L1-10",
+        "case_number": 309,
+        "oracle_case": [
+          "CASE 309 | Set the selling price of ultra-low-sulfur diesel to $110/bbl. Set the fixed sales quantity of ultra-low-sulfur diesel to 30 kbbl/day.",
+          "TABLE | SELL",
+          " | TEXT | FIX | PRICE |",
+          "ULS | ULS | 30.0 | 110.0 |",
+          "*"
+        ],
+        "scenario": "Set the selling price of ultra-low-sulfur diesel to $110/bbl. Set the fixed sales quantity of ultra-low-sulfur diesel to 30 kbbl/day."
+      },
+      "GC-L2-01": {
+        "task_id": "GC-L2-01",
+        "case_number": 310,
+        "oracle_case": [
+          "CASE 310 | Set the selling price of RFG regular gasoline to $104/bbl. Set the selling price of RFG premium gasoline to $109/bbl. Set the purchase limit of Arab Heavy crude to 180 kbbl/day. Set the purchase limit of Arab Light crude to 180 kbbl/day.",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "RRG | RRG | 104.0 |",
+          "RPR | RPR | 109.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "ARH | ARH | 180.0 |",
+          "ARL | ARL | 180.0 |",
+          "*"
+        ],
+        "scenario": "Set the selling price of RFG regular gasoline to $104/bbl. Set the selling price of RFG premium gasoline to $109/bbl. Set the purchase limit of Arab Heavy crude to 180 kbbl/day. Set the purchase limit of Arab Light crude to 180 kbbl/day."
+      },
+      "GC-L2-02": {
+        "task_id": "GC-L2-02",
+        "case_number": 311,
+        "oracle_case": [
+          "CASE 311 | Set the capacity limit of the FCC unit to 120 kbbl/day. Set the purchase limit of Arab Heavy crude to 180 kbbl/day.",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CCCU | CCCU | 120.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "ARH | ARH | 180.0 |",
+          "*"
+        ],
+        "scenario": "Set the capacity limit of the FCC unit to 120 kbbl/day. Set the purchase limit of Arab Heavy crude to 180 kbbl/day."
+      },
+      "GC-L2-03": {
+        "task_id": "GC-L2-03",
+        "case_number": 312,
+        "oracle_case": [
+          "CASE 312 | Set the operating range of the delayed coker to 40–80 kbbl/day. Set the purchase limit of Arab Heavy crude to 180 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $113/bbl.",
+          "TABLE | CAPS",
+          " | TEXT | MIN | MAX |",
+          "CDLC | CDLC | 40.0 | 80.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "ARH | ARH | 180.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "ULS | ULS | 113.0 |",
+          "*"
+        ],
+        "scenario": "Set the operating range of the delayed coker to 40–80 kbbl/day. Set the purchase limit of Arab Heavy crude to 180 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $113/bbl."
+      },
+      "GC-L2-04": {
+        "task_id": "GC-L2-04",
+        "case_number": 313,
+        "oracle_case": [
+          "CASE 313 | Set the capacity limit of the delayed coker to 100 kbbl/day. Set the purchase limit of Arab Heavy crude to 160 kbbl/day.",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CDLC | CDLC | 100.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "ARH | ARH | 160.0 |",
+          "*"
+        ],
+        "scenario": "Set the capacity limit of the delayed coker to 100 kbbl/day. Set the purchase limit of Arab Heavy crude to 160 kbbl/day."
+      },
+      "GC-L2-05": {
+        "task_id": "GC-L2-05",
+        "case_number": 314,
+        "oracle_case": [
+          "CASE 314 | Set the minimum throughput of the hydrocracker to 18 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $108/bbl.",
+          "TABLE | CAPS",
+          " | TEXT | MIN |",
+          "CHCU | CHCU | 18.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "ULS | ULS | 108.0 |",
+          "*"
+        ],
+        "scenario": "Set the minimum throughput of the hydrocracker to 18 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $108/bbl."
+      },
+      "GC-L2-06": {
+        "task_id": "GC-L2-06",
+        "case_number": 315,
+        "oracle_case": [
+          "CASE 315 | Set the minimum steam sales rate to 5 MLB/hr, the steam selling price to $8/MLB, and the ultra-low-sulfur diesel selling price to $105/bbl.",
+          "TABLE | UTILSEL",
+          " | TEXT | MIN | PRICE |",
+          "STM | STM | 5.0 | 8.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "ULS | ULS | 105.0 |",
+          "*"
+        ],
+        "scenario": "Set the minimum steam sales rate to 5 MLB/hr, the steam selling price to $8/MLB, and the ultra-low-sulfur diesel selling price to $105/bbl."
+      },
+      "GC-L2-07": {
+        "task_id": "GC-L2-07",
+        "case_number": 316,
+        "oracle_case": [
+          "CASE 316 | Activate RVP tracking by setting the RVP index to 1, and set the RFG regular-gasoline selling price to $100/bbl.",
+          "TABLE | RFG",
+          " | TEXT | INDEX |",
+          "RVP | RVP | 1.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "RRG | RRG | 100.0 |",
+          "*"
+        ],
+        "scenario": "Activate RVP tracking by setting the RVP index to 1, and set the RFG regular-gasoline selling price to $100/bbl."
+      },
+      "GC-L2-08": {
+        "task_id": "GC-L2-08",
+        "case_number": 317,
+        "oracle_case": [
+          "CASE 317 | Set the operating range of the hydrocracker to 15–35 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $108/bbl.",
+          "TABLE | CAPS",
+          " | TEXT | MIN | MAX |",
+          "CHCU | CHCU | 15.0 | 35.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "ULS | ULS | 108.0 |",
+          "*"
+        ],
+        "scenario": "Set the operating range of the hydrocracker to 15–35 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $108/bbl."
+      },
+      "GC-L2-09": {
+        "task_id": "GC-L2-09",
+        "case_number": 318,
+        "oracle_case": [
+          "CASE 318 | Create or update product group DIST with group number 9. Assign ultra-low-sulfur diesel to product group DIST. Set the selling price of ultra-low-sulfur diesel to $108/bbl.",
+          "TABLE | GROUPS",
+          " | TEXT | GROUP | ULS |",
+          "DIST | DIST | 9.0 | 1.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "ULS | ULS | 108.0 |",
+          "*"
+        ],
+        "scenario": "Create or update product group DIST with group number 9. Assign ultra-low-sulfur diesel to product group DIST. Set the selling price of ultra-low-sulfur diesel to $108/bbl."
+      },
+      "GC-L2-10": {
+        "task_id": "GC-L2-10",
+        "case_number": 319,
+        "oracle_case": [
+          "CASE 319 | Set the capacity limit of the CDU-2 to 230 kbbl/day. Set the purchase limit of Mesa crude to 80 kbbl/day. Set the selling price of RFG regular gasoline to $100/bbl. Set the selling price of ultra-low-sulfur diesel to $108/bbl.",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "Cat2 | Cat2 | 230.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "MES | MES | 80.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "RRG | RRG | 100.0 |",
+          "ULS | ULS | 108.0 |",
+          "*"
+        ],
+        "scenario": "Set the capacity limit of the CDU-2 to 230 kbbl/day. Set the purchase limit of Mesa crude to 80 kbbl/day. Set the selling price of RFG regular gasoline to $100/bbl. Set the selling price of ultra-low-sulfur diesel to $108/bbl."
+      },
+      "GC-L3-01": {
+        "task_id": "GC-L3-01",
+        "case_number": 349,
+        "oracle_case": [
+          "CASE 349 | Set the operating range of the distillate hydrotreater to 5–40 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $120/bbl.",
+          "TABLE | CAPS",
+          " | TEXT | MIN | MAX |",
+          "CDHT | Dist Hydrotrt BPD | 5.0 | 40.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "ULS | ULS Diesel | 120.0 |",
+          "*"
+        ],
+        "scenario": "Set the operating range of the distillate hydrotreater to 5–40 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $120/bbl."
+      },
+      "GC-L3-02": {
+        "task_id": "GC-L3-02",
+        "case_number": 321,
+        "oracle_case": [
+          "CASE 321 | Set the maximum FCC conversion to 98%. Set the capacity limit of the FCC unit to 120 kbbl/day. Set the selling price of RFG regular gasoline to $102/bbl. Set the selling price of RFG premium gasoline to $107/bbl.",
+          "TABLE | PROCLIM",
+          " | TEXT | MAX |",
+          "ZCON | ZCON | 98.0 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CCCU | CCCU | 120.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "RRG | RRG | 102.0 |",
+          "RPR | RPR | 107.0 |",
+          "*"
+        ],
+        "scenario": "Set the maximum FCC conversion to 98%. Set the capacity limit of the FCC unit to 120 kbbl/day. Set the selling price of RFG regular gasoline to $102/bbl. Set the selling price of RFG premium gasoline to $107/bbl."
+      },
+      "GC-L3-03": {
+        "task_id": "GC-L3-03",
+        "case_number": 322,
+        "oracle_case": [
+          "CASE 322 | Set the sulfur specification of RFG regular gasoline to 0.05 wt%. Set the capacity limit of the distillate hydrotreater to 30 kbbl/day. Set the selling price of RFG regular gasoline to $100/bbl. Set the selling price of RFG premium gasoline to $105/bbl.",
+          "TABLE | BLNSPEC",
+          " | TEXT | RRG |",
+          "XSUL | XSUL | 0.05 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CDHT | CDHT | 30.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "RRG | RRG | 100.0 |",
+          "RPR | RPR | 105.0 |",
+          "*"
+        ],
+        "scenario": "Set the sulfur specification of RFG regular gasoline to 0.05 wt%. Set the capacity limit of the distillate hydrotreater to 30 kbbl/day. Set the selling price of RFG regular gasoline to $100/bbl. Set the selling price of RFG premium gasoline to $105/bbl."
+      },
+      "GC-L3-04": {
+        "task_id": "GC-L3-04",
+        "case_number": 323,
+        "oracle_case": [
+          "CASE 323 | Set the sulfur specification of ultra-low-sulfur diesel to 0.08 wt%. Set the capacity limit of the distillate hydrotreater to 35 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $108/bbl.",
+          "TABLE | BLNSPEC",
+          " | TEXT | ULS |",
+          "XSUL | XSUL | 0.08 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CDHT | CDHT | 35.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "ULS | ULS | 108.0 |",
+          "*"
+        ],
+        "scenario": "Set the sulfur specification of ultra-low-sulfur diesel to 0.08 wt%. Set the capacity limit of the distillate hydrotreater to 35 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $108/bbl."
+      },
+      "GC-L3-05": {
+        "task_id": "GC-L3-05",
+        "case_number": 324,
+        "oracle_case": [
+          "CASE 324 | Enable MTBE as a blending component for RFG premium gasoline. Set the purchase limit of MTBE to 20 kbbl/day. Set the purchase cost of MTBE to $150/bbl. Set the selling price of RFG premium gasoline to $108/bbl.",
+          "TABLE | BLNMIX",
+          " | TEXT | RPR |",
+          "MTBE | MTBE | 1.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX | COST |",
+          "MTBE | MTBE | 20.0 | 150.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "RPR | RPR | 108.0 |",
+          "*"
+        ],
+        "scenario": "Enable MTBE as a blending component for RFG premium gasoline. Set the purchase limit of MTBE to 20 kbbl/day. Set the purchase cost of MTBE to $150/bbl. Set the selling price of RFG premium gasoline to $108/bbl."
+      },
+      "GC-L3-06": {
+        "task_id": "GC-L3-06",
+        "case_number": 325,
+        "oracle_case": [
+          "CASE 325 | Set TEL additive use for RFG premium gasoline to 0.5. Set the capacity limit of the catalytic reformer to 50 kbbl/day. Set the selling price of RFG premium gasoline to $110/bbl.",
+          "TABLE | ADDITIVE",
+          " | TEXT | RPR |",
+          "TEL | TEL | 0.5 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CLPR | CLPR | 50.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "RPR | RPR | 110.0 |",
+          "*"
+        ],
+        "scenario": "Set TEL additive use for RFG premium gasoline to 0.5. Set the capacity limit of the catalytic reformer to 50 kbbl/day. Set the selling price of RFG premium gasoline to $110/bbl."
+      },
+      "GC-L3-07": {
+        "task_id": "GC-L3-07",
+        "case_number": 326,
+        "oracle_case": [
+          "CASE 326 | Set interaction coefficient CTIHCD-HCN to -1.5. Set the selling price of ultra-low-sulfur diesel to $108/bbl.",
+          "TABLE | INTERACT",
+          " | TEXT | HCN |",
+          "CTIHCD | CTIHCD | -1.5 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "ULS | ULS | 108.0 |",
+          "*"
+        ],
+        "scenario": "Set interaction coefficient CTIHCD-HCN to -1.5. Set the selling price of ultra-low-sulfur diesel to $108/bbl."
+      },
+      "GC-L3-08": {
+        "task_id": "GC-L3-08",
+        "case_number": 327,
+        "oracle_case": [
+          "CASE 327 | Enable isobutane as a blending component for ultra-low-sulfur diesel. Set the purchase limit of isobutane to 15 kbbl/day.",
+          "TABLE | BLNMIX",
+          " | TEXT | ULS |",
+          "IC4 | Iso-Butane | 1.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "IC4 | Iso-Butane | 15.0 |",
+          "*"
+        ],
+        "scenario": "Enable isobutane as a blending component for ultra-low-sulfur diesel. Set the purchase limit of isobutane to 15 kbbl/day."
+      },
+      "GC-L3-09": {
+        "task_id": "GC-L3-09",
+        "case_number": 328,
+        "oracle_case": [
+          "CASE 328 | Enable hydrotreated kerosene as a blending component for jet fuel. Set the selling price of jet fuel to $120/bbl. Set the minimum sales volume of jet fuel to 15 kbbl/day.",
+          "TABLE | BLNMIX",
+          " | TEXT | JET |",
+          "HTK | Hydrotreated Kero | 1.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | MIN | PRICE |",
+          "JET | Kero/Jet | 15.0 | 120.0 |",
+          "*"
+        ],
+        "scenario": "Enable hydrotreated kerosene as a blending component for jet fuel. Set the selling price of jet fuel to $120/bbl. Set the minimum sales volume of jet fuel to 15 kbbl/day."
+      },
+      "GC-L3-10": {
+        "task_id": "GC-L3-10",
+        "case_number": 338,
+        "oracle_case": [
+          "CASE 338 | Shut down the distillate hydrotreater by setting both its minimum and maximum throughput to 0 kbbl/day.",
+          "TABLE | CAPS",
+          " | TEXT | MIN | MAX |",
+          "CDHT | Dist Hydrotrt BPD | 0.0 | 0.0 |",
+          "*"
+        ],
+        "scenario": "Shut down the distillate hydrotreater by setting both its minimum and maximum throughput to 0 kbbl/day."
+      },
+      "GC-L4-01": {
+        "task_id": "GC-L4-01",
+        "case_number": 330,
+        "oracle_case": [
+          "CASE 330 | Set reformer severity to the range 100–108. Set the capacity limit of the catalytic reformer to 70 kbbl/day. Set the selling price of RFG regular gasoline to $104/bbl. Set the selling price of RFG premium gasoline to $109/bbl.",
+          "TABLE | PROCLIM",
+          " | TEXT | MIN | MAX |",
+          "ZSEV | ZSEV | 100.0 | 108.0 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CLPR | CLPR | 70.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "RRG | RRG | 104.0 |",
+          "RPR | RPR | 109.0 |",
+          "*"
+        ],
+        "scenario": "Set reformer severity to the range 100–108. Set the capacity limit of the catalytic reformer to 70 kbbl/day. Set the selling price of RFG regular gasoline to $104/bbl. Set the selling price of RFG premium gasoline to $109/bbl."
+      },
+      "GC-L4-02": {
+        "task_id": "GC-L4-02",
+        "case_number": 331,
+        "oracle_case": [
+          "CASE 331 | Set the capacity limit of the vacuum unit 1 to 30 kbbl/day. Set the capacity limit of the vacuum unit 2 to 35 kbbl/day. Set the selling price of high-sulfur fuel oil to $90/bbl.",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CVU1 | Vac Unit 1 BPD | 30.0 |",
+          "CVU2 | Vac Unit 2 BPD | 35.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "HSF | High Sulfur Fuel Oil | 90.0 |",
+          "*"
+        ],
+        "scenario": "Set the capacity limit of the vacuum unit 1 to 30 kbbl/day. Set the capacity limit of the vacuum unit 2 to 35 kbbl/day. Set the selling price of high-sulfur fuel oil to $90/bbl."
+      },
+      "GC-L4-03": {
+        "task_id": "GC-L4-03",
+        "case_number": 332,
+        "oracle_case": [
+          "CASE 332 | Set reformer severity to the range 98–106. Set the capacity limit of the delayed coker to 80 kbbl/day. Set the selling price of RFG regular gasoline to $100/bbl. Set the selling price of ultra-low-sulfur diesel to $105/bbl.",
+          "TABLE | PROCLIM",
+          " | TEXT | MIN | MAX |",
+          "ZSEV | ZSEV | 98.0 | 106.0 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CDLC | CDLC | 80.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "RRG | RRG | 100.0 |",
+          "ULS | ULS | 105.0 |",
+          "*"
+        ],
+        "scenario": "Set reformer severity to the range 98–106. Set the capacity limit of the delayed coker to 80 kbbl/day. Set the selling price of RFG regular gasoline to $100/bbl. Set the selling price of ultra-low-sulfur diesel to $105/bbl."
+      },
+      "GC-L4-04": {
+        "task_id": "GC-L4-04",
+        "case_number": 333,
+        "oracle_case": [
+          "CASE 333 | Update the reformer submodel coefficients: VBALR90.B90=-0.9, VBALR94.B94=-0.865, VBALR98.B98=-0.83, VBALFGS.B90=0.006, VBALFGS.B94=0.01, VBALFGS.B98=0.018, VBALHYL.B90=-0.004, VBALHYL.B94=-0.007, VBALHYL.B98=-0.012.",
+          "TABLE | SLPR",
+          " | TEXT | B90 | B94 | B98 |",
+          "VBALR90 | 90 RON Reformate | -0.900 |  |  |",
+          "VBALR94 | 94 RON Reformate |  | -0.865 |  |",
+          "VBALR98 | 98 RON Reformate |  |  | -0.830 |",
+          "VBALFGS | Fuel Gas | 0.006 | 0.010 | 0.018 |",
+          "VBALHYL | Hydrogen | -0.004 | -0.007 | -0.012 |",
+          "*"
+        ],
+        "scenario": "Update the reformer submodel coefficients: VBALR90.B90=-0.9, VBALR94.B94=-0.865, VBALR98.B98=-0.83, VBALFGS.B90=0.006, VBALFGS.B94=0.01, VBALFGS.B98=0.018, VBALHYL.B90=-0.004, VBALHYL.B94=-0.007, VBALHYL.B98=-0.012."
+      },
+      "GC-L4-05": {
+        "task_id": "GC-L4-05",
+        "case_number": 334,
+        "oracle_case": [
+          "CASE 334 | Shut down the hydrocracker by setting both its minimum and maximum throughput to 0 kbbl/day. Enable hydrotreated distillate as a jet-fuel blending component and set the high-sulfur fuel-oil sales limit to 10 kbbl/day.",
+          "TABLE | CAPS",
+          " | TEXT | MIN | MAX |",
+          "CHCU | Hydrocrack Dist BPD | 0.0 | 0.0 |",
+          "*",
+          "TABLE | BLNMIX",
+          " | TEXT | JET |",
+          "HTD | Hydrotreated Dist | 1.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | MAX |",
+          "HSF | High Sulfur Fuel Oil | 10.0 |",
+          "*"
+        ],
+        "scenario": "Shut down the hydrocracker by setting both its minimum and maximum throughput to 0 kbbl/day. Enable hydrotreated distillate as a jet-fuel blending component and set the high-sulfur fuel-oil sales limit to 10 kbbl/day."
+      },
+      "GC-L4-06": {
+        "task_id": "GC-L4-06",
+        "case_number": 335,
+        "oracle_case": [
+          "CASE 335 | Set the purchase limit of Arab Heavy crude to 170 kbbl/day. Set the capacity limit of the delayed coker to 90 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $107/bbl. Set the selling price of RFG regular gasoline to $98/bbl.",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "ARH | ARH | 170.0 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CDLC | CDLC | 90.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "ULS | ULS | 107.0 |",
+          "RRG | RRG | 98.0 |",
+          "*"
+        ],
+        "scenario": "Set the purchase limit of Arab Heavy crude to 170 kbbl/day. Set the capacity limit of the delayed coker to 90 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $107/bbl. Set the selling price of RFG regular gasoline to $98/bbl."
+      },
+      "GC-L4-07": {
+        "task_id": "GC-L4-07",
+        "case_number": 336,
+        "oracle_case": [
+          "CASE 336 | Set the maximum FCC conversion to 96%. Set the capacity limit of the FCC unit to 110 kbbl/day. Set the purchase limit of Arab Heavy crude to 175 kbbl/day. Set the purchase limit of Mesa crude to 75 kbbl/day. Set the selling price of RFG regular gasoline to $100/bbl. Set the selling price of ultra-low-sulfur diesel to $106/bbl. Set the selling price of jet fuel to $105/bbl.",
+          "TABLE | PROCLIM",
+          " | TEXT | MAX |",
+          "ZCON | ZCON | 96.0 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CCCU | CCCU | 110.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "ARH | ARH | 175.0 |",
+          "MES | MES | 75.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "RRG | RRG | 100.0 |",
+          "ULS | ULS | 106.0 |",
+          "JET | JET | 105.0 |",
+          "*"
+        ],
+        "scenario": "Set the maximum FCC conversion to 96%. Set the capacity limit of the FCC unit to 110 kbbl/day. Set the purchase limit of Arab Heavy crude to 175 kbbl/day. Set the purchase limit of Mesa crude to 75 kbbl/day. Set the selling price of RFG regular gasoline to $100/bbl. Set the selling price of ultra-low-sulfur diesel to $106/bbl. Set the selling price of jet fuel to $105/bbl."
+      },
+      "GC-L4-08": {
+        "task_id": "GC-L4-08",
+        "case_number": 337,
+        "oracle_case": [
+          "CASE 337 | Register the HYL and HYH gas streams for tracking, set the low-pressure hydrogen purchase limit to 50 kbbl/day, raise the distillate hydrotreater capacity limit to 35 kbbl/day, and set the ultra-low-sulfur diesel selling price to $105/bbl.",
+          "TABLE | GASES",
+          " | TEXT |  |",
+          "HYL | HYL |  |",
+          "HYH | HYH |  |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "HYL | HYL | 50.0 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CDHT | CDHT | 35.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "ULS | ULS | 105.0 |",
+          "*"
+        ],
+        "scenario": "Register the HYL and HYH gas streams for tracking, set the low-pressure hydrogen purchase limit to 50 kbbl/day, raise the distillate hydrotreater capacity limit to 35 kbbl/day, and set the ultra-low-sulfur diesel selling price to $105/bbl."
+      },
+      "GC-L4-09": {
+        "task_id": "GC-L4-09",
+        "case_number": 344,
+        "oracle_case": [
+          "CASE 344 | Set the capacity limit of the vacuum tower 1 to 80 kbbl/day. Set the capacity limit of the vacuum tower 2 to 90 kbbl/day. Set the capacity limit of the CDU-2 to 250 kbbl/day. Set the capacity limit of the delayed coker to 80 kbbl/day. Set the purchase limit of Arab Heavy crude to 180 kbbl/day. Set the purchase limit of Merey crude to 80 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $108/bbl. Set the selling price of RFG regular gasoline to $100/bbl.",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CVT1 | CVT1 | 80.0 |",
+          "CVT2 | CVT2 | 90.0 |",
+          "Cat2 | Cat2 | 250.0 |",
+          "CDLC | CDLC | 80.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "ARH | ARH | 180.0 |",
+          "MRY | MRY | 80.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "ULS | ULS | 108.0 |",
+          "RRG | RRG | 100.0 |",
+          "*"
+        ],
+        "scenario": "Set the capacity limit of the vacuum tower 1 to 80 kbbl/day. Set the capacity limit of the vacuum tower 2 to 90 kbbl/day. Set the capacity limit of the CDU-2 to 250 kbbl/day. Set the capacity limit of the delayed coker to 80 kbbl/day. Set the purchase limit of Arab Heavy crude to 180 kbbl/day. Set the purchase limit of Merey crude to 80 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $108/bbl. Set the selling price of RFG regular gasoline to $100/bbl."
+      },
+      "GC-L4-10": {
+        "task_id": "GC-L4-10",
+        "case_number": 339,
+        "oracle_case": [
+          "CASE 339 | Set the operating range of the FCC unit to 0–40 kbbl/day. Set the maximum sales volume of ultra-low-sulfur diesel to 35 kbbl/day.",
+          "TABLE | CAPS",
+          " | TEXT | MIN | MAX |",
+          "CCCU | Cat Cracker BPD | 0.0 | 40.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | MAX |",
+          "ULS | ULS Diesel | 35.0 |",
+          "*"
+        ],
+        "scenario": "Set the operating range of the FCC unit to 0–40 kbbl/day. Set the maximum sales volume of ultra-low-sulfur diesel to 35 kbbl/day."
+      },
+      "GC-L5-01": {
+        "task_id": "GC-L5-01",
+        "case_number": 340,
+        "oracle_case": [
+          "CASE 340 | Set reformer severity to the range 100–108. Set FCC conversion to the range 95–98%. Set the capacity limit of the catalytic reformer to 70 kbbl/day. Set the capacity limit of the FCC unit to 120 kbbl/day. Set the selling price of RFG regular gasoline to $104/bbl. Set the selling price of RFG premium gasoline to $109/bbl. Set the selling price of ultra-low-sulfur diesel to $106/bbl.",
+          "TABLE | PROCLIM",
+          " | TEXT | MIN | MAX |",
+          "ZSEV | ZSEV | 100.0 | 108.0 |",
+          "ZCON | ZCON | 95.0 | 98.0 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CLPR | CLPR | 70.0 |",
+          "CCCU | CCCU | 120.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "RRG | RRG | 104.0 |",
+          "RPR | RPR | 109.0 |",
+          "ULS | ULS | 106.0 |",
+          "*"
+        ],
+        "scenario": "Set reformer severity to the range 100–108. Set FCC conversion to the range 95–98%. Set the capacity limit of the catalytic reformer to 70 kbbl/day. Set the capacity limit of the FCC unit to 120 kbbl/day. Set the selling price of RFG regular gasoline to $104/bbl. Set the selling price of RFG premium gasoline to $109/bbl. Set the selling price of ultra-low-sulfur diesel to $106/bbl."
+      },
+      "GC-L5-02": {
+        "task_id": "GC-L5-02",
+        "case_number": 341,
+        "oracle_case": [
+          "CASE 341 | Set reformer severity to the range 100–108. Set FCC conversion to the range 95–98%. Set the capacity limit of the CDU-2 to 200 kbbl/day. Set the capacity limit of the FCC unit to 120 kbbl/day. Set the capacity limit of the delayed coker to 100 kbbl/day. Set the capacity limit of the catalytic reformer to 70 kbbl/day. Set the capacity limit of the hydrocracker to 40 kbbl/day. Set the selling price of RFG regular gasoline to $104/bbl. Set the selling price of RFG premium gasoline to $109/bbl. Set the selling price of ultra-low-sulfur diesel to $108/bbl. Set the selling price of jet fuel to $107/bbl. Set the purchase limit of Arab Heavy crude to 200 kbbl/day. Set the purchase limit of Arab Light crude to 200 kbbl/day. Set the purchase limit of Mesa crude to 90 kbbl/day. Set the purchase limit of Merey crude to 90 kbbl/day. Set the sulfur specification of ultra-low-sulfur diesel to 0.1 wt%.",
+          "TABLE | PROCLIM",
+          " | TEXT | MIN | MAX |",
+          "ZSEV | ZSEV | 100.0 | 108.0 |",
+          "ZCON | ZCON | 95.0 | 98.0 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "Cat2 | Cat2 | 200.0 |",
+          "CCCU | CCCU | 120.0 |",
+          "CDLC | CDLC | 100.0 |",
+          "CLPR | CLPR | 70.0 |",
+          "CHCU | CHCU | 40.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "RRG | RRG | 104.0 |",
+          "RPR | RPR | 109.0 |",
+          "ULS | ULS | 108.0 |",
+          "JET | JET | 107.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "ARH | ARH | 200.0 |",
+          "ARL | ARL | 200.0 |",
+          "MES | MES | 90.0 |",
+          "MRY | MRY | 90.0 |",
+          "*",
+          "TABLE | BLNSPEC",
+          " | TEXT | ULS |",
+          "XSUL | XSUL | 0.1 |",
+          "*"
+        ],
+        "scenario": "Set reformer severity to the range 100–108. Set FCC conversion to the range 95–98%. Set the capacity limit of the CDU-2 to 200 kbbl/day. Set the capacity limit of the FCC unit to 120 kbbl/day. Set the capacity limit of the delayed coker to 100 kbbl/day. Set the capacity limit of the catalytic reformer to 70 kbbl/day. Set the capacity limit of the hydrocracker to 40 kbbl/day. Set the selling price of RFG regular gasoline to $104/bbl. Set the selling price of RFG premium gasoline to $109/bbl. Set the selling price of ultra-low-sulfur diesel to $108/bbl. Set the selling price of jet fuel to $107/bbl. Set the purchase limit of Arab Heavy crude to 200 kbbl/day. Set the purchase limit of Arab Light crude to 200 kbbl/day. Set the purchase limit of Mesa crude to 90 kbbl/day. Set the purchase limit of Merey crude to 90 kbbl/day. Set the sulfur specification of ultra-low-sulfur diesel to 0.1 wt%."
+      },
+      "GC-L5-03": {
+        "task_id": "GC-L5-03",
+        "case_number": 342,
+        "oracle_case": [
+          "CASE 342 | Set FCC conversion to the range 94–97%. Set the capacity limit of the FCC unit to 110 kbbl/day. Set the capacity limit of the delayed coker to 90 kbbl/day. Set the selling price of RFG regular gasoline to $102/bbl. Set the selling price of RFG premium gasoline to $107/bbl. Set the selling price of ultra-low-sulfur diesel to $106/bbl. Set the purchase limit of Arab Heavy crude to 180 kbbl/day. Set the purchase limit of Merey crude to 80 kbbl/day.",
+          "TABLE | PROCLIM",
+          " | TEXT | MIN | MAX |",
+          "ZCON | ZCON | 94.0 | 97.0 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CCCU | CCCU | 110.0 |",
+          "CDLC | CDLC | 90.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "RRG | RRG | 102.0 |",
+          "RPR | RPR | 107.0 |",
+          "ULS | ULS | 106.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "ARH | ARH | 180.0 |",
+          "MRY | MRY | 80.0 |",
+          "*"
+        ],
+        "scenario": "Set FCC conversion to the range 94–97%. Set the capacity limit of the FCC unit to 110 kbbl/day. Set the capacity limit of the delayed coker to 90 kbbl/day. Set the selling price of RFG regular gasoline to $102/bbl. Set the selling price of RFG premium gasoline to $107/bbl. Set the selling price of ultra-low-sulfur diesel to $106/bbl. Set the purchase limit of Arab Heavy crude to 180 kbbl/day. Set the purchase limit of Merey crude to 80 kbbl/day."
+      },
+      "GC-L5-04": {
+        "task_id": "GC-L5-04",
+        "case_number": 343,
+        "oracle_case": [
+          "CASE 343 | Set reformer severity to the range 99–107. Set FCC conversion to the range 93–97%. Set the capacity limit of the CDU-2 to 210 kbbl/day. Set the capacity limit of the hydrocracker to 38 kbbl/day. Set the capacity limit of the FCC unit to 115 kbbl/day. Set the selling price of RFG regular gasoline to $103/bbl. Set the selling price of RFG premium gasoline to $108/bbl. Set the selling price of ultra-low-sulfur diesel to $107/bbl. Set the selling price of jet fuel to $106/bbl. Set the purchase limit of Arab Heavy crude to 190 kbbl/day. Set the purchase limit of Arab Light crude to 190 kbbl/day. Set the sulfur specification of ultra-low-sulfur diesel to 0.08 wt%.",
+          "TABLE | PROCLIM",
+          " | TEXT | MIN | MAX |",
+          "ZSEV | ZSEV | 99.0 | 107.0 |",
+          "ZCON | ZCON | 93.0 | 97.0 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "Cat2 | Cat2 | 210.0 |",
+          "CHCU | CHCU | 38.0 |",
+          "CCCU | CCCU | 115.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "RRG | RRG | 103.0 |",
+          "RPR | RPR | 108.0 |",
+          "ULS | ULS | 107.0 |",
+          "JET | JET | 106.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "ARH | ARH | 190.0 |",
+          "ARL | ARL | 190.0 |",
+          "*",
+          "TABLE | BLNSPEC",
+          " | TEXT | ULS |",
+          "XSUL | XSUL | 0.08 |",
+          "*"
+        ],
+        "scenario": "Set reformer severity to the range 99–107. Set FCC conversion to the range 93–97%. Set the capacity limit of the CDU-2 to 210 kbbl/day. Set the capacity limit of the hydrocracker to 38 kbbl/day. Set the capacity limit of the FCC unit to 115 kbbl/day. Set the selling price of RFG regular gasoline to $103/bbl. Set the selling price of RFG premium gasoline to $108/bbl. Set the selling price of ultra-low-sulfur diesel to $107/bbl. Set the selling price of jet fuel to $106/bbl. Set the purchase limit of Arab Heavy crude to 190 kbbl/day. Set the purchase limit of Arab Light crude to 190 kbbl/day. Set the sulfur specification of ultra-low-sulfur diesel to 0.08 wt%."
+      },
+      "GC-L5-05": {
+        "task_id": "GC-L5-05",
+        "case_number": 329,
+        "oracle_case": [
+          "CASE 329 | Set the purchase limit of heavy naphtha to 20 kbbl/day. Set the capacity limit of the naphtha hydrotreater to 70 kbbl/day. Set the capacity limit of the catalytic reformer to 45 kbbl/day.",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "HNP | Heavy Naphtha | 20.0 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CNHT | Naph Hydrotrt BPD | 70.0 |",
+          "CLPR | Mogas Reformer BPD | 45.0 |",
+          "*"
+        ],
+        "scenario": "Set the purchase limit of heavy naphtha to 20 kbbl/day. Set the capacity limit of the naphtha hydrotreater to 70 kbbl/day. Set the capacity limit of the catalytic reformer to 45 kbbl/day."
+      },
+      "GC-L5-06": {
+        "task_id": "GC-L5-06",
+        "case_number": 345,
+        "oracle_case": [
+          "CASE 345 | Update the coker submodel coefficients: VBALLKO.BAS=-0.24, VBALLOS.BAS=1.0581. Update the FCC submodel coefficients: VBALLCO.BAS=-0.18, VBALLOS.BAS=1.1139. Set the capacity limit of the delayed coker to 60 kbbl/day. Set the capacity limit of the FCC unit to 70 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $120/bbl.",
+          "TABLE | SDLC",
+          " | TEXT | BAS |",
+          "VBALLKO | Lt Coker Gas Oil | -0.24 |",
+          "VBALLOS | Volume Losses | 1.0581 |",
+          "*",
+          "TABLE | SCCU",
+          " | TEXT | BAS |",
+          "VBALLCO | Lt Cycle Oil | -0.18 |",
+          "VBALLOS | Volume Losses | 1.1139 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CDLC | Delayed Coker BPD | 60.0 |",
+          "CCCU | Cat Cracker BPD | 70.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "ULS | ULS Diesel | 120.0 |",
+          "*"
+        ],
+        "scenario": "Update the coker submodel coefficients: VBALLKO.BAS=-0.24, VBALLOS.BAS=1.0581. Update the FCC submodel coefficients: VBALLCO.BAS=-0.18, VBALLOS.BAS=1.1139. Set the capacity limit of the delayed coker to 60 kbbl/day. Set the capacity limit of the FCC unit to 70 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $120/bbl."
+      },
+      "GC-L5-07": {
+        "task_id": "GC-L5-07",
+        "case_number": 346,
+        "oracle_case": [
+          "CASE 346 | Update the hydrocracker submodel coefficients: VBALHCD.BAS=-0.33, VBALUCO.BAS=-0.17, VBALLOS.BAS=1.1683. Set the capacity limit of the hydrocracker to 25 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $120/bbl.",
+          "TABLE | SHCU",
+          " | TEXT | BAS |",
+          "VBALHCD | HCU Diesel | -0.33 |",
+          "VBALUCO | Unconverted Oil | -0.17 |",
+          "VBALLOS | Volume Losses | 1.1683 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CHCU | Hydrocrack Dist BPD | 25.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "ULS | ULS Diesel | 120.0 |",
+          "*"
+        ],
+        "scenario": "Update the hydrocracker submodel coefficients: VBALHCD.BAS=-0.33, VBALUCO.BAS=-0.17, VBALLOS.BAS=1.1683. Set the capacity limit of the hydrocracker to 25 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $120/bbl."
+      },
+      "GC-L5-08": {
+        "task_id": "GC-L5-08",
+        "case_number": 347,
+        "oracle_case": [
+          "CASE 347 | Set the capacity limit of the vacuum tower 1 to 80 kbbl/day. Set the capacity limit of the vacuum tower 2 to 90 kbbl/day. Set the capacity limit of the CDU-2 to 250 kbbl/day. Set the capacity limit of the delayed coker to 80 kbbl/day. Set the purchase limit of Arab Heavy crude to 170 kbbl/day. Set the purchase limit of Merey crude to 80 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $108/bbl. Set the selling price of RFG regular gasoline to $100/bbl.",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CVT1 | CVT1 | 80.0 |",
+          "CVT2 | CVT2 | 90.0 |",
+          "Cat2 | Cat2 | 250.0 |",
+          "CDLC | CDLC | 80.0 |",
+          "*",
+          "TABLE | BUY",
+          " | TEXT | MAX |",
+          "ARH | ARH | 170.0 |",
+          "MRY | MRY | 80.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "ULS | ULS | 108.0 |",
+          "RRG | RRG | 100.0 |",
+          "*"
+        ],
+        "scenario": "Set the capacity limit of the vacuum tower 1 to 80 kbbl/day. Set the capacity limit of the vacuum tower 2 to 90 kbbl/day. Set the capacity limit of the CDU-2 to 250 kbbl/day. Set the capacity limit of the delayed coker to 80 kbbl/day. Set the purchase limit of Arab Heavy crude to 170 kbbl/day. Set the purchase limit of Merey crude to 80 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $108/bbl. Set the selling price of RFG regular gasoline to $100/bbl."
+      },
+      "GC-L5-09": {
+        "task_id": "GC-L5-09",
+        "case_number": 348,
+        "oracle_case": [
+          "CASE 348 | Update the reformer submodel coefficients: VBALR02.B02=-0.77, VBALLOS.B02=0.8757. Set the capacity limit of the catalytic reformer to 40 kbbl/day. Set the capacity limit of the aromatics reformer to 45 kbbl/day. Set the selling price of toluene to $130/bbl.",
+          "TABLE | SLPR",
+          " | TEXT | B02 |",
+          "VBALR02 | 102 RON Reformate | -0.770 |",
+          "VBALLOS | Volume Losses | 0.8757 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MAX |",
+          "CLPR | Mogas Reformer BPD | 40.0 |",
+          "CARU | Arom Reformer BPD | 45.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "TOL | Toluene | 130.0 |",
+          "*"
+        ],
+        "scenario": "Update the reformer submodel coefficients: VBALR02.B02=-0.77, VBALLOS.B02=0.8757. Set the capacity limit of the catalytic reformer to 40 kbbl/day. Set the capacity limit of the aromatics reformer to 45 kbbl/day. Set the selling price of toluene to $130/bbl."
+      },
+      "GC-L5-10": {
+        "task_id": "GC-L5-10",
+        "case_number": 320,
+        "oracle_case": [
+          "CASE 320 | Update the DHT submodel coefficients: VBALHTD.BAS=-0.995, VBALLOS.BAS=0.996. Set the minimum throughput of the distillate hydrotreater to 20 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $108/bbl.",
+          "TABLE | SDHT",
+          " | TEXT | BAS |",
+          "VBALHTD | Treated Distillate | -0.995 |",
+          "VBALLOS | Volume Losses | 0.996 |",
+          "*",
+          "TABLE | CAPS",
+          " | TEXT | MIN |",
+          "CDHT | CDHT | 20.0 |",
+          "*",
+          "TABLE | SELL",
+          " | TEXT | PRICE |",
+          "ULS | ULS | 108.0 |",
+          "*"
+        ],
+        "scenario": "Update the DHT submodel coefficients: VBALHTD.BAS=-0.995, VBALLOS.BAS=0.996. Set the minimum throughput of the distillate hydrotreater to 20 kbbl/day. Set the selling price of ultra-low-sulfur diesel to $108/bbl."
+      }
+    }
+  }
+}

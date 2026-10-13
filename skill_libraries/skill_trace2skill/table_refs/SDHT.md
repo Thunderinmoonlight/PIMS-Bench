@@ -1,0 +1,1 @@
+YIELD column for LOS (Loss) accepts delta values. A value of -1.0 means reduce loss by 1 absolute percentage point (e.g., from 2% to 1%). Use format: 'TABLE | SDHT\n | TEXT | YIELD |\nLOS | Loss | -1.0 |'

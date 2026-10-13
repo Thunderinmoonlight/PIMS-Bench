@@ -1,0 +1,2 @@
+## BLNMIX Sheet
+BLNMIX contains blending component assignments for each product pool. Columns include: Blend Pool, Component, Min%, Max%, Current Flow. To enable IC4 blending into DSL/LSF, ensure IC4 rows exist for pools 'DSL' and 'LSF' with appropriate min/max constraints. If absent, IC4 must be added as an eligible component before optimization.

@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use these artifacts, please cite the paper below."
+title: "PIMS-Bench & SkillRefine Artifacts"
+type: software
+authors:
+  - family-names: Liu
+    given-names: Dongxiao
+  - family-names: Zhu
+    given-names: Boren
+  - family-names: Ding
+    given-names: Yuwen
+  - family-names: Li
+    given-names: Lei
+  - family-names: Li
+    given-names: Xiaoyong
+  - family-names: Li
+    given-names: Linghui
+preferred-citation:
+  type: article
+  title: "SkillRefine: Cross-source skill induction and execution-grounded refinement of agent knowledge libraries for industrial planning software"
+  authors:
+    - family-names: Liu
+      given-names: Dongxiao
+    - family-names: Zhu
+      given-names: Boren
+    - family-names: Ding
+      given-names: Yuwen
+    - family-names: Li
+      given-names: Lei
+    - family-names: Li
+      given-names: Xiaoyong
+    - family-names: Li
+      given-names: Linghui
+  journal: "Knowledge-Based Systems"
+  year: 2026
+  notes: "Under review"

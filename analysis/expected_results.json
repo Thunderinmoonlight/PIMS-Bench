@@ -1,0 +1,1161 @@
+{
+  "verify": {
+    "baseline": {
+      "deepseekpro": {
+        "match": {
+          "mean": 0.581,
+          "avg_sd": 0.15,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.852,
+          "avg_sd": 0.036,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.818,
+          "avg_sd": 0.106,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      },
+      "deepseekflash": {
+        "match": {
+          "mean": 0.618,
+          "avg_sd": 0.144,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.832,
+          "avg_sd": 0.072,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.808,
+          "avg_sd": 0.091,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      },
+      "gemma31b": {
+        "match": {
+          "mean": 0.62,
+          "avg_sd": 0.074,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.83,
+          "avg_sd": 0.031,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.684,
+          "avg_sd": 0.08,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      },
+      "qwen27b": {
+        "match": {
+          "mean": 0.468,
+          "avg_sd": 0.174,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.829,
+          "avg_sd": 0.055,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.704,
+          "avg_sd": 0.149,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      }
+    },
+    "no_guidance": {
+      "deepseekpro": {
+        "match": null,
+        "row_recall": null,
+        "col_recall": null
+      },
+      "deepseekflash": {
+        "match": null,
+        "row_recall": null,
+        "col_recall": null
+      },
+      "gemma31b": {
+        "match": null,
+        "row_recall": null,
+        "col_recall": null
+      },
+      "qwen27b": {
+        "match": null,
+        "row_recall": null,
+        "col_recall": null
+      }
+    },
+    "doconly": {
+      "deepseekpro": {
+        "match": {
+          "mean": 0.62,
+          "avg_sd": 0.148,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.858,
+          "avg_sd": 0.034,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.795,
+          "avg_sd": 0.104,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      },
+      "deepseekflash": {
+        "match": {
+          "mean": 0.638,
+          "avg_sd": 0.142,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.824,
+          "avg_sd": 0.076,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.809,
+          "avg_sd": 0.102,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      },
+      "gemma31b": {
+        "match": {
+          "mean": 0.653,
+          "avg_sd": 0.078,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.827,
+          "avg_sd": 0.034,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.716,
+          "avg_sd": 0.084,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      },
+      "qwen27b": {
+        "match": {
+          "mean": 0.443,
+          "avg_sd": 0.182,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.817,
+          "avg_sd": 0.067,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.703,
+          "avg_sd": 0.155,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      }
+    },
+    "skill_base": {
+      "deepseekpro": {
+        "match": {
+          "mean": 0.694,
+          "avg_sd": 0.139,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.86,
+          "avg_sd": 0.05,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.871,
+          "avg_sd": 0.092,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      },
+      "deepseekflash": {
+        "match": {
+          "mean": 0.705,
+          "avg_sd": 0.137,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.835,
+          "avg_sd": 0.094,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.858,
+          "avg_sd": 0.086,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      },
+      "gemma31b": {
+        "match": {
+          "mean": 0.694,
+          "avg_sd": 0.104,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.835,
+          "avg_sd": 0.05,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.821,
+          "avg_sd": 0.103,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      },
+      "qwen27b": {
+        "match": {
+          "mean": 0.59,
+          "avg_sd": 0.185,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.835,
+          "avg_sd": 0.087,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.79,
+          "avg_sd": 0.13,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      }
+    },
+    "trace2skill": {
+      "deepseekpro": {
+        "match": {
+          "mean": 0.752,
+          "avg_sd": 0.085,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.888,
+          "avg_sd": 0.021,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.891,
+          "avg_sd": 0.053,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      },
+      "deepseekflash": {
+        "match": {
+          "mean": 0.698,
+          "avg_sd": 0.123,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.832,
+          "avg_sd": 0.091,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.824,
+          "avg_sd": 0.128,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      },
+      "gemma31b": {
+        "match": {
+          "mean": 0.771,
+          "avg_sd": 0.039,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.868,
+          "avg_sd": 0.025,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.875,
+          "avg_sd": 0.026,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      },
+      "qwen27b": {
+        "match": {
+          "mean": 0.656,
+          "avg_sd": 0.117,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.842,
+          "avg_sd": 0.044,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.822,
+          "avg_sd": 0.09,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      }
+    },
+    "skillopt": {
+      "deepseekpro": {
+        "match": {
+          "mean": 0.742,
+          "avg_sd": 0.078,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.884,
+          "avg_sd": 0.034,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.886,
+          "avg_sd": 0.06,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      },
+      "deepseekflash": {
+        "match": {
+          "mean": 0.719,
+          "avg_sd": 0.122,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.862,
+          "avg_sd": 0.073,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.861,
+          "avg_sd": 0.114,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      },
+      "gemma31b": {
+        "match": {
+          "mean": 0.778,
+          "avg_sd": 0.04,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.872,
+          "avg_sd": 0.023,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.886,
+          "avg_sd": 0.048,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      },
+      "qwen27b": {
+        "match": {
+          "mean": 0.711,
+          "avg_sd": 0.113,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.852,
+          "avg_sd": 0.043,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.861,
+          "avg_sd": 0.079,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      }
+    },
+    "skill_adaptive": {
+      "deepseekpro": {
+        "match": {
+          "mean": 0.775,
+          "avg_sd": 0.083,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.887,
+          "avg_sd": 0.045,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.907,
+          "avg_sd": 0.042,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      },
+      "deepseekflash": {
+        "match": {
+          "mean": 0.757,
+          "avg_sd": 0.079,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.888,
+          "avg_sd": 0.04,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.897,
+          "avg_sd": 0.042,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      },
+      "gemma31b": {
+        "match": {
+          "mean": 0.8,
+          "avg_sd": 0.026,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.893,
+          "avg_sd": 0.012,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.909,
+          "avg_sd": 0.015,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      },
+      "qwen27b": {
+        "match": {
+          "mean": 0.764,
+          "avg_sd": 0.072,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "row_recall": {
+          "mean": 0.882,
+          "avg_sd": 0.035,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        },
+        "col_recall": {
+          "mean": 0.897,
+          "avg_sd": 0.035,
+          "n_tasks": 100,
+          "n_runs": [
+            5
+          ]
+        }
+      }
+    }
+  },
+  "perlevel": {
+    "baseline": {
+      "deepseekpro": {
+        "1": 0.76,
+        "2": 0.68,
+        "3": 0.551,
+        "4": 0.506,
+        "5": 0.407
+      },
+      "deepseekflash": {
+        "1": 0.729,
+        "2": 0.755,
+        "3": 0.649,
+        "4": 0.547,
+        "5": 0.411
+      },
+      "gemma31b": {
+        "1": 0.723,
+        "2": 0.698,
+        "3": 0.617,
+        "4": 0.634,
+        "5": 0.427
+      },
+      "qwen27b": {
+        "1": 0.602,
+        "2": 0.562,
+        "3": 0.472,
+        "4": 0.391,
+        "5": 0.313
+      }
+    },
+    "doconly": {
+      "deepseekpro": {
+        "1": 0.757,
+        "2": 0.75,
+        "3": 0.597,
+        "4": 0.57,
+        "5": 0.427
+      },
+      "deepseekflash": {
+        "1": 0.691,
+        "2": 0.78,
+        "3": 0.685,
+        "4": 0.558,
+        "5": 0.472
+      },
+      "gemma31b": {
+        "1": 0.791,
+        "2": 0.726,
+        "3": 0.668,
+        "4": 0.661,
+        "5": 0.417
+      },
+      "qwen27b": {
+        "1": 0.619,
+        "2": 0.481,
+        "3": 0.43,
+        "4": 0.349,
+        "5": 0.335
+      }
+    },
+    "skill_base": {
+      "deepseekpro": {
+        "1": 0.846,
+        "2": 0.776,
+        "3": 0.659,
+        "4": 0.66,
+        "5": 0.532
+      },
+      "deepseekflash": {
+        "1": 0.798,
+        "2": 0.809,
+        "3": 0.719,
+        "4": 0.681,
+        "5": 0.517
+      },
+      "gemma31b": {
+        "1": 0.816,
+        "2": 0.763,
+        "3": 0.708,
+        "4": 0.73,
+        "5": 0.454
+      },
+      "qwen27b": {
+        "1": 0.744,
+        "2": 0.657,
+        "3": 0.618,
+        "4": 0.528,
+        "5": 0.4
+      }
+    },
+    "trace2skill": {
+      "deepseekpro": {
+        "1": 0.841,
+        "2": 0.848,
+        "3": 0.774,
+        "4": 0.711,
+        "5": 0.587
+      },
+      "deepseekflash": {
+        "1": 0.861,
+        "2": 0.819,
+        "3": 0.639,
+        "4": 0.679,
+        "5": 0.493
+      },
+      "gemma31b": {
+        "1": 0.854,
+        "2": 0.874,
+        "3": 0.824,
+        "4": 0.746,
+        "5": 0.555
+      },
+      "qwen27b": {
+        "1": 0.802,
+        "2": 0.752,
+        "3": 0.753,
+        "4": 0.594,
+        "5": 0.381
+      }
+    },
+    "skillopt": {
+      "deepseekpro": {
+        "1": 0.835,
+        "2": 0.826,
+        "3": 0.781,
+        "4": 0.731,
+        "5": 0.536
+      },
+      "deepseekflash": {
+        "1": 0.832,
+        "2": 0.819,
+        "3": 0.734,
+        "4": 0.684,
+        "5": 0.523
+      },
+      "gemma31b": {
+        "1": 0.869,
+        "2": 0.877,
+        "3": 0.832,
+        "4": 0.739,
+        "5": 0.573
+      },
+      "qwen27b": {
+        "1": 0.852,
+        "2": 0.797,
+        "3": 0.787,
+        "4": 0.666,
+        "5": 0.45
+      }
+    },
+    "skill_adaptive": {
+      "deepseekpro": {
+        "1": 0.863,
+        "2": 0.836,
+        "3": 0.771,
+        "4": 0.762,
+        "5": 0.643
+      },
+      "deepseekflash": {
+        "1": 0.89,
+        "2": 0.852,
+        "3": 0.763,
+        "4": 0.695,
+        "5": 0.588
+      },
+      "gemma31b": {
+        "1": 0.904,
+        "2": 0.872,
+        "3": 0.827,
+        "4": 0.757,
+        "5": 0.643
+      },
+      "qwen27b": {
+        "1": 0.878,
+        "2": 0.841,
+        "3": 0.835,
+        "4": 0.727,
+        "5": 0.538
+      }
+    },
+    "ablation_no_signal1": {
+      "deepseekpro": {
+        "1": 0.861,
+        "2": 0.851,
+        "3": 0.759,
+        "4": 0.768,
+        "5": 0.546
+      },
+      "deepseekflash": {
+        "1": 0.862,
+        "2": 0.86,
+        "3": 0.717,
+        "4": 0.701,
+        "5": 0.514
+      },
+      "gemma31b": {
+        "1": 0.916,
+        "2": 0.88,
+        "3": 0.834,
+        "4": 0.742,
+        "5": 0.584
+      },
+      "qwen27b": {
+        "1": 0.854,
+        "2": 0.854,
+        "3": 0.82,
+        "4": 0.694,
+        "5": 0.4
+      }
+    },
+    "ablation_no_signal2": {
+      "deepseekpro": {
+        "1": 0.818,
+        "2": 0.861,
+        "3": 0.741,
+        "4": 0.727,
+        "5": 0.547
+      },
+      "deepseekflash": {
+        "1": 0.837,
+        "2": 0.865,
+        "3": 0.754,
+        "4": 0.715,
+        "5": 0.532
+      },
+      "gemma31b": {
+        "1": 0.864,
+        "2": 0.881,
+        "3": 0.802,
+        "4": 0.737,
+        "5": 0.568
+      },
+      "qwen27b": {
+        "1": 0.835,
+        "2": 0.838,
+        "3": 0.742,
+        "4": 0.662,
+        "5": 0.358
+      }
+    }
+  },
+  "perlevel_gap_skillrefine_minus_baseline": {
+    "1": 0.18,
+    "2": 0.176,
+    "3": 0.227,
+    "4": 0.216,
+    "5": 0.214
+  },
+  "significance": {
+    "deepseekpro": {
+      "baseline": {
+        "n_tasks": 100,
+        "mean_diff": 0.1946,
+        "wilcoxon_W": 245.5,
+        "wilcoxon_p": 2.6087843292694634e-12,
+        "rank_biserial_r": 0.869,
+        "w_plus": 3495.5,
+        "w_minus": 245.5,
+        "ttest_p": 1.3025795894755566e-13,
+        "cohen_dz": 0.859
+      },
+      "doconly": {
+        "n_tasks": 100,
+        "mean_diff": 0.1551,
+        "wilcoxon_W": 199.5,
+        "wilcoxon_p": 9.541591592182668e-12,
+        "rank_biserial_r": 0.877,
+        "w_plus": 3040.5,
+        "w_minus": 199.5,
+        "ttest_p": 1.178246698502646e-11,
+        "cohen_dz": 0.768
+      },
+      "skill_base": {
+        "n_tasks": 100,
+        "mean_diff": 0.0809,
+        "wilcoxon_W": 523.0,
+        "wilcoxon_p": 6.750289254391666e-07,
+        "rank_biserial_r": 0.652,
+        "w_plus": 2480.0,
+        "w_minus": 523.0,
+        "ttest_p": 8.951062962649239e-06,
+        "cohen_dz": 0.468
+      },
+      "trace2skill": {
+        "n_tasks": 100,
+        "mean_diff": 0.0232,
+        "wilcoxon_W": 716.5,
+        "wilcoxon_p": 0.09997223606699339,
+        "rank_biserial_r": 0.242,
+        "w_plus": 1174.5,
+        "w_minus": 716.5,
+        "ttest_p": 0.12323768113226201,
+        "cohen_dz": 0.155
+      },
+      "skillopt": {
+        "n_tasks": 100,
+        "mean_diff": 0.0336,
+        "wilcoxon_W": 774.5,
+        "wilcoxon_p": 0.10990472886825822,
+        "rank_biserial_r": 0.232,
+        "w_plus": 1241.5,
+        "w_minus": 774.5,
+        "ttest_p": 0.040213565252761596,
+        "cohen_dz": 0.208
+      }
+    },
+    "deepseekflash": {
+      "baseline": {
+        "n_tasks": 100,
+        "mean_diff": 0.1391,
+        "wilcoxon_W": 244.5,
+        "wilcoxon_p": 1.7431436185961904e-10,
+        "rank_biserial_r": 0.837,
+        "w_plus": 2758.5,
+        "w_minus": 244.5,
+        "ttest_p": 2.639585759381312e-10,
+        "cohen_dz": 0.703
+      },
+      "doconly": {
+        "n_tasks": 100,
+        "mean_diff": 0.12,
+        "wilcoxon_W": 419.0,
+        "wilcoxon_p": 1.3956500490622788e-08,
+        "rank_biserial_r": 0.735,
+        "w_plus": 2741.0,
+        "w_minus": 419.0,
+        "ttest_p": 5.446397537182618e-08,
+        "cohen_dz": 0.588
+      },
+      "skill_base": {
+        "n_tasks": 100,
+        "mean_diff": 0.0528,
+        "wilcoxon_W": 759.5,
+        "wilcoxon_p": 0.0018596174767831469,
+        "rank_biserial_r": 0.422,
+        "w_plus": 1868.5,
+        "w_minus": 759.5,
+        "ttest_p": 0.00037477862676965016,
+        "cohen_dz": 0.368
+      },
+      "trace2skill": {
+        "n_tasks": 100,
+        "mean_diff": 0.0592,
+        "wilcoxon_W": 485.0,
+        "wilcoxon_p": 2.6211190994781785e-05,
+        "rank_biserial_r": 0.587,
+        "w_plus": 1861.0,
+        "w_minus": 485.0,
+        "ttest_p": 1.2116835690476584e-05,
+        "cohen_dz": 0.461
+      },
+      "skillopt": {
+        "n_tasks": 100,
+        "mean_diff": 0.0389,
+        "wilcoxon_W": 850.0,
+        "wilcoxon_p": 0.009216479684893648,
+        "rank_biserial_r": 0.353,
+        "w_plus": 1778.0,
+        "w_minus": 850.0,
+        "ttest_p": 0.0038542681698097918,
+        "cohen_dz": 0.296
+      }
+    },
+    "gemma31b": {
+      "baseline": {
+        "n_tasks": 100,
+        "mean_diff": 0.1807,
+        "wilcoxon_W": 133.0,
+        "wilcoxon_p": 2.0858088522878364e-10,
+        "rank_biserial_r": 0.887,
+        "w_plus": 2213.0,
+        "w_minus": 133.0,
+        "ttest_p": 8.589566557285674e-11,
+        "cohen_dz": 0.727
+      },
+      "doconly": {
+        "n_tasks": 100,
+        "mean_diff": 0.1479,
+        "wilcoxon_W": 193.5,
+        "wilcoxon_p": 9.227661589358746e-09,
+        "rank_biserial_r": 0.82,
+        "w_plus": 1951.5,
+        "w_minus": 193.5,
+        "ttest_p": 9.019953153779853e-09,
+        "cohen_dz": 0.628
+      },
+      "skill_base": {
+        "n_tasks": 100,
+        "mean_diff": 0.1063,
+        "wilcoxon_W": 231.5,
+        "wilcoxon_p": 2.360013004550972e-08,
+        "rank_biserial_r": 0.791,
+        "w_plus": 1979.5,
+        "w_minus": 231.5,
+        "ttest_p": 9.690533873682672e-07,
+        "cohen_dz": 0.522
+      },
+      "trace2skill": {
+        "n_tasks": 100,
+        "mean_diff": 0.0297,
+        "wilcoxon_W": 465.0,
+        "wilcoxon_p": 0.29479726050368327,
+        "rank_biserial_r": 0.176,
+        "w_plus": 663.0,
+        "w_minus": 465.0,
+        "ttest_p": 0.06989503226733061,
+        "cohen_dz": 0.183
+      },
+      "skillopt": {
+        "n_tasks": 100,
+        "mean_diff": 0.0225,
+        "wilcoxon_W": 458.0,
+        "wilcoxon_p": 0.3673915042094098,
+        "rank_biserial_r": 0.153,
+        "w_plus": 623.0,
+        "w_minus": 458.0,
+        "ttest_p": 0.16010528430088822,
+        "cohen_dz": 0.142
+      }
+    },
+    "qwen27b": {
+      "baseline": {
+        "n_tasks": 100,
+        "mean_diff": 0.296,
+        "wilcoxon_W": 59.0,
+        "wilcoxon_p": 8.248911361951048e-16,
+        "rank_biserial_r": 0.972,
+        "w_plus": 4127.0,
+        "w_minus": 59.0,
+        "ttest_p": 1.3028946628722923e-21,
+        "cohen_dz": 1.228
+      },
+      "doconly": {
+        "n_tasks": 100,
+        "mean_diff": 0.3211,
+        "wilcoxon_W": 67.0,
+        "wilcoxon_p": 7.134729871407024e-16,
+        "rank_biserial_r": 0.969,
+        "w_plus": 4211.0,
+        "w_minus": 67.0,
+        "ttest_p": 2.366061831782801e-23,
+        "cohen_dz": 1.31
+      },
+      "skill_base": {
+        "n_tasks": 100,
+        "mean_diff": 0.1743,
+        "wilcoxon_W": 196.0,
+        "wilcoxon_p": 2.161862672154507e-12,
+        "rank_biserial_r": 0.888,
+        "w_plus": 3290.0,
+        "w_minus": 196.0,
+        "ttest_p": 4.294750155067428e-15,
+        "cohen_dz": 0.927
+      },
+      "trace2skill": {
+        "n_tasks": 100,
+        "mean_diff": 0.1075,
+        "wilcoxon_W": 321.5,
+        "wilcoxon_p": 4.2372605414699934e-08,
+        "rank_biserial_r": 0.748,
+        "w_plus": 2234.5,
+        "w_minus": 321.5,
+        "ttest_p": 4.223951203656313e-08,
+        "cohen_dz": 0.594
+      },
+      "skillopt": {
+        "n_tasks": 100,
+        "mean_diff": 0.0534,
+        "wilcoxon_W": 577.0,
+        "wilcoxon_p": 0.000447013927472074,
+        "rank_biserial_r": 0.493,
+        "w_plus": 1701.0,
+        "w_minus": 577.0,
+        "ttest_p": 0.0015059594456002007,
+        "cohen_dz": 0.326
+      }
+    }
+  },
+  "ablation_means": {
+    "skill_adaptive": {
+      "deepseekpro": 0.775,
+      "deepseekflash": 0.757,
+      "gemma31b": 0.8,
+      "qwen27b": 0.764
+    },
+    "ablation_no_signal1": {
+      "deepseekpro": 0.757,
+      "deepseekflash": 0.731,
+      "gemma31b": 0.791,
+      "qwen27b": 0.724
+    },
+    "ablation_no_signal2": {
+      "deepseekpro": 0.739,
+      "deepseekflash": 0.741,
+      "gemma31b": 0.77,
+      "qwen27b": 0.687
+    }
+  }
+}
